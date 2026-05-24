@@ -1,0 +1,111 @@
+=== [Causal Discovery] Fold 4 (4/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/extraction_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/metadata.json
+Test:  CI( 0 , 1 | () ) = 1.8902657217267915e-12
+Test:  CI( 0 , 2 | () ) = 0.6502686557403676
+Test:  CI( 1 , 2 | () ) = 0.13059563617518877
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.0
+Test:  CI( 2 , 3 | () ) = 2.747904126465528e-10
+Test:  CI( 0 , 4 | () ) = 0.05614727701786304
+Test:  CI( 1 , 4 | () ) = 0.0029201901981115164
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 2.4393998598881694e-07
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 4.789364460577872e-10
+Test:  CI( 2 , 5 | () ) = 0.0
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 1.5987211554602254e-14
+Test:  CI( 0 , 3 | (1,) ) = 5.0889457092750945e-09
+Test:  CI( 0 , 3 | (2,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 1.8842927218543082e-11
+Test:  CI( 1 , 3 | (2,) ) = 0.0
+Test:  CI( 2 , 3 | (0,) ) = 0.0
+Test:  CI( 2 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 4 | (2,) ) = 3.723931163435168e-09
+Test:  CI( 1 , 4 | (3,) ) = 0.6423534641616411
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.16543796209595918
+Test:  CI( 0 , 5 | (1,) ) = 1.0914920078874957e-09
+Test:  CI( 0 , 5 | (2,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.0038796851204325744
+Test:  CI( 0 , 5 | (4,) ) = 0.0
+Test:  CI( 1 , 5 | (0,) ) = 0.0038965100330623503
+Test:  CI( 1 , 5 | (2,) ) = 0.0
+Test:  CI( 1 , 5 | (3,) ) = 0.4866021140589216
+Test:  CI( 2 , 5 | (0,) ) = 0.0
+Test:  CI( 2 , 5 | (3,) ) = 1.5365486660812167e-13
+Test:  CI( 2 , 5 | (4,) ) = 2.2643420471979425e-10
+Test:  CI( 3 , 5 | (0,) ) = 0.0
+Test:  CI( 3 , 5 | (2,) ) = 0.0
+Test:  CI( 3 , 5 | (4,) ) = 0.0
+Test:  CI( 4 , 5 | (0,) ) = 0.0
+Test:  CI( 4 , 5 | (2,) ) = 0.028314582669753507
+Saved adjacency matrix to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 5.284661597215745e-14
+Test:  CI( 0 , 2 | () ) = 0.48254803838416294
+Test:  CI( 1 , 2 | () ) = 0.3727229912142844
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 4.083980487123995e-09
+Test:  CI( 2 , 3 | () ) = 0.5284952673568628
+Test:  CI( 0 , 4 | () ) = 0.0029065372622993912
+Test:  CI( 1 , 4 | () ) = 0.022327002264191265
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.88277469749512
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.38124764998489136
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.32695494798309155
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.1420539357932109
+Test:  CI( 0 , 4 | (2,) ) = 0.001307119839652593
+Test:  CI( 2 , 4 | (0,) ) = 0.0
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.0013390350669650886
+Test:  CI( 1 , 5 | (0,) ) = 2.8858009368804005e-06
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 3 , 5 | (0,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (1, 3) ) = 0.6108421917704789
+Saved metrics to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/performance_metrics.json
+Saved baseline metrics to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/pag_vs_pag_metrics.json
+Found 9 differences:
+  1. Wrong orientation: 0 --- 1 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Missing: 0 --- 4 (DAG: directed_ij)
+  4. Extra: 0 --- 5 (PAG: bidirected)
+  5. Extra: 1 --- 3 (PAG: partial_ij)
+  6. Missing: 1 --- 5 (DAG: directed_ij)
+  7. Extra: 2 --- 3 (PAG: bidirected)
+  8. Extra: 2 --- 5 (PAG: bidirected)
+  9. Missing: 3 --- 4 (DAG: directed_ij)
+Saved edge comparison details to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/edge_comparison.txt
+Found 4 differences:
+  1. Wrong orientation: 0 --- 1 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 0 --- 4 (DAG: directed_ij, PAG: bidirected)
+  4. Missing: 3 --- 4 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/edge_comparison_baseline.txt
+Found 6 differences:
+  1. Missing: 0 --- 4 (Reference PAG: bidirected)
+  2. Extra: 0 --- 5 (PAG: bidirected)
+  3. Extra: 1 --- 3 (PAG: partial_ij)
+  4. Missing: 1 --- 5 (Reference PAG: directed_ij)
+  5. Extra: 2 --- 3 (PAG: bidirected)
+  6. Extra: 2 --- 5 (PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 2 --- 4 (Reference PAG: partial_ij, PAG: directed_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/linear_sem_bottleneck_mlp_no_align/4/baseline_graph_adj.npy
