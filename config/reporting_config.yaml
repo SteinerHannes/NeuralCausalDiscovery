@@ -1,0 +1,504 @@
+defaults:
+  - _self_
+
+reporting:
+  name: thesis_reports
+  output_dir: outputs/reporting/${reporting.name}
+  strict_intervention_schema: true
+  run_if_missing: true
+  force_rerun: false
+
+  experiment_groups:
+    core_alignment_all:
+      - experiment/linear_sem_shallow_mlp_no_align.yaml
+      - experiment/linear_sem_shallow_mlp_align.yaml
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_deep_mlp_no_align.yaml
+      - experiment/linear_sem_deep_mlp_align.yaml
+      - experiment/linear_sem_deep_mlp_align_observable_state.yaml
+      - experiment/linear_sem_bottleneck_mlp_no_align.yaml
+      - experiment/linear_sem_bottleneck_mlp_align.yaml
+      - experiment/linear_sem_bottleneck_mlp_align_observable_state.yaml
+      - experiment/linear_sem_gated_mlp_no_align.yaml
+      - experiment/linear_sem_gated_mlp_align.yaml
+      - experiment/linear_sem_gated_mlp_align_observable_state.yaml
+      - experiment/linear_sem_residual_mlp_no_align.yaml
+      - experiment/linear_sem_residual_mlp_align.yaml
+      - experiment/linear_sem_residual_mlp_align_observable_state.yaml
+      - experiment/linear_sem_tabular_mlp_no_align.yaml
+      - experiment/linear_sem_tabular_mlp_align.yaml
+      - experiment/linear_sem_tabular_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_no_align.yaml
+      - experiment/electrical_circuit_shallow_mlp_align.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_deep_mlp_no_align.yaml
+      - experiment/electrical_circuit_deep_mlp_align.yaml
+      - experiment/electrical_circuit_deep_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_bottleneck_mlp_no_align.yaml
+      - experiment/electrical_circuit_bottleneck_mlp_align.yaml
+      - experiment/electrical_circuit_bottleneck_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_gated_mlp_no_align.yaml
+      - experiment/electrical_circuit_gated_mlp_align.yaml
+      - experiment/electrical_circuit_gated_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_residual_mlp_no_align.yaml
+      - experiment/electrical_circuit_residual_mlp_align.yaml
+      - experiment/electrical_circuit_residual_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_tabular_mlp_no_align.yaml
+      - experiment/electrical_circuit_tabular_mlp_align.yaml
+      - experiment/electrical_circuit_tabular_mlp_align_observable_state.yaml
+
+    core_observable_models:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_deep_mlp_align_observable_state.yaml
+      - experiment/linear_sem_bottleneck_mlp_align_observable_state.yaml
+      - experiment/linear_sem_gated_mlp_align_observable_state.yaml
+      - experiment/linear_sem_residual_mlp_align_observable_state.yaml
+      - experiment/linear_sem_tabular_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_deep_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_bottleneck_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_gated_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_residual_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_tabular_mlp_align_observable_state.yaml
+
+    training_dynamics_core_aligned:
+      - experiment/linear_sem_shallow_mlp_align.yaml
+      - experiment/linear_sem_deep_mlp_align.yaml
+      - experiment/linear_sem_bottleneck_mlp_align.yaml
+      - experiment/linear_sem_gated_mlp_align.yaml
+      - experiment/linear_sem_residual_mlp_align.yaml
+      - experiment/linear_sem_tabular_mlp_align.yaml
+      - experiment/electrical_circuit_shallow_mlp_align.yaml
+      - experiment/electrical_circuit_deep_mlp_align.yaml
+      - experiment/electrical_circuit_bottleneck_mlp_align.yaml
+      - experiment/electrical_circuit_gated_mlp_align.yaml
+      - experiment/electrical_circuit_residual_mlp_align.yaml
+      - experiment/electrical_circuit_tabular_mlp_align.yaml
+
+    benchmark_expansion_observable_shallow_only:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+      - experiment/chain_linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/fork_collider_linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_laplace_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_student_t3_shallow_mlp_align_observable_state.yaml
+      - experiment/chain_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/fork_collider_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+
+    linear_sem_observable_shallow_only:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+
+    current_measurement_observable_shallow_only:
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+
+    core_alignment_proxy_shallow_only:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_shallow_mlp_align.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align.yaml
+
+    extraction_internal:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_deep_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_deep_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_deep_mlp_align_observable_state.yaml
+      - experiment/linear_sem_bottleneck_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_bottleneck_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_bottleneck_mlp_align_observable_state.yaml
+      - experiment/linear_sem_gated_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_gated_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_gated_mlp_align_observable_state.yaml
+      - experiment/linear_sem_residual_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_residual_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_residual_mlp_align_observable_state.yaml
+      - experiment/linear_sem_tabular_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_tabular_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_tabular_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_deep_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_deep_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_deep_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_bottleneck_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_bottleneck_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_bottleneck_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_gated_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_gated_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_gated_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_residual_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_residual_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_residual_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_tabular_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_tabular_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_tabular_mlp_align_observable_state.yaml
+
+    additional_extraction_modes:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_pre_activations_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_input_gradients_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_inputs_outputs_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_weights_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_pre_activations_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_input_gradients_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_inputs_outputs_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_weights_shallow_mlp_align_observable_state.yaml
+
+    sample_size_sweep:
+      - experiment/linear_sem_sample_50_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_100_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_150_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_200_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_250_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_300_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_350_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_400_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_450_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_500_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_750_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_sample_1000_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_50_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_100_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_150_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_200_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_250_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_300_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_350_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_400_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_450_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_500_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_750_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_sample_1000_shallow_mlp_align_observable_state.yaml
+
+    ci_threshold_sweep:
+      - experiment/linear_sem_threshold_0p005_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_threshold_0p01_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_threshold_0p02_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_threshold_0p05_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_threshold_0p005_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_threshold_0p01_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_threshold_0p02_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_threshold_0p05_shallow_mlp_align_observable_state.yaml
+
+    ci_mismatch_proper:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_observable_state.yaml
+
+    ci_mismatch_mismatch:
+      - experiment/linear_sem_shallow_mlp_align_kci_mismatch_observable_state.yaml
+      - experiment/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state.yaml
+
+    node_count_linear_sem:
+      - experiment/linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_nodes_7_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_nodes_8_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_nodes_9_shallow_mlp_align_observable_state.yaml
+      - experiment/linear_sem_nodes_10_shallow_mlp_align_observable_state.yaml
+
+    node_count_layered_sparse_linear_shallow:
+      - experiment/layered_sparse_linear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_8_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_10_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_12_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_14_shallow_mlp_align_observable_state.yaml
+
+    node_count_layered_sparse_linear_tabular:
+      - experiment/layered_sparse_linear_sem_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_8_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_10_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_12_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_linear_sem_nodes_14_tabular_mlp_align_observable_state.yaml
+
+    node_count_layered_sparse_nonlinear_shallow:
+      - experiment/layered_sparse_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_10_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_12_shallow_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_14_shallow_mlp_align_observable_state.yaml
+
+    node_count_layered_sparse_nonlinear_tabular:
+      - experiment/layered_sparse_nonlinear_sem_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_8_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_10_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_12_tabular_mlp_align_observable_state.yaml
+      - experiment/layered_sparse_nonlinear_sem_nodes_14_tabular_mlp_align_observable_state.yaml
+
+  figure_specs:
+    - id: model_parameter_counts_3x3
+      kind: model_parameter_counts
+      enabled: true
+      input_size: 3
+      output_size: 3
+      model_order: [ShallowMLP, DeepMLP, BottleneckMLP, GatedMLP, ResidualMLP, TabularMLP]
+
+    - id: structural_data_truth_baseline
+      kind: structural_data_truth_baseline
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_alignment_all}
+
+    - id: structural_alignment_target_truth
+      kind: structural_alignment_target_truth
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_alignment_all}
+
+    - id: structural_data_model_truth_comparison
+      kind: structural_data_model_truth_comparison
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_alignment_all}
+
+    - id: linear_sem_data_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Linear SEM: Ground-Truth DAG vs Data-Level PAGs by Fold"
+      graph_adj_file: baseline_graph_adj.npy
+      pag_label_prefix: Data-Level PAG
+      experiments: ${reporting.experiment_groups.linear_sem_observable_shallow_only}
+
+    - id: linear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Linear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments: ${reporting.experiment_groups.linear_sem_observable_shallow_only}
+
+    - id: current_measurement_data_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Current Measurement: Ground-Truth DAG vs Data-Level PAGs by Fold"
+      graph_adj_file: baseline_graph_adj.npy
+      pag_label_prefix: Data-Level PAG
+      experiments: ${reporting.experiment_groups.current_measurement_observable_shallow_only}
+
+    - id: current_measurement_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Current Measurement: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments: ${reporting.experiment_groups.current_measurement_observable_shallow_only}
+
+    - id: chain_linear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Chain Linear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/chain_linear_sem_shallow_mlp_align_observable_state.yaml
+
+    - id: fork_collider_linear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Fork-Collider Linear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/fork_collider_linear_sem_shallow_mlp_align_observable_state.yaml
+
+    - id: layered_sparse_linear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Layered Sparse Linear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/layered_sparse_linear_sem_shallow_mlp_align_observable_state.yaml
+
+    - id: layered_sparse_linear_sem_laplace_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Layered Sparse Linear SEM (Laplace): Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/layered_sparse_linear_sem_laplace_shallow_mlp_align_observable_state.yaml
+
+    - id: layered_sparse_linear_sem_student_t_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Layered Sparse Linear SEM (Student-t): Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/layered_sparse_linear_sem_student_t3_shallow_mlp_align_observable_state.yaml
+
+    - id: chain_nonlinear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Chain Nonlinear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/chain_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+
+    - id: fork_collider_nonlinear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Fork-Collider Nonlinear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/fork_collider_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+
+    - id: layered_sparse_nonlinear_sem_model_level_fold_pags_vs_truth
+      kind: dag_fold_pag_comparison
+      enabled: true
+      title: "Layered Sparse Nonlinear SEM: Ground-Truth DAG vs Model-Level PAGs by Fold"
+      graph_adj_file: learned_graph_adj.npy
+      pag_label_prefix: Model-Level PAG
+      experiments:
+        - experiment/layered_sparse_nonlinear_sem_shallow_mlp_align_observable_state.yaml
+
+    - id: structural_extraction_internal_truth
+      kind: structural_extraction_internal_truth
+      enabled: true
+      experiments: ${reporting.experiment_groups.extraction_internal}
+
+    - id: intervention_detection_quality
+      kind: intervention_detection_quality
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+    - id: intervention_model_output_detection
+      kind: intervention_model_output_detection
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+    - id: intervention_model_pag_consistency
+      kind: intervention_model_pag_consistency
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+    - id: intervention_model_pag_consistency_benchmark_expansion
+      kind: intervention_model_pag_consistency_benchmark_expansion
+      enabled: true
+      dataset_order:
+        - LinearSEMDataset
+        - ElectricalCircuitData
+        - ChainLinearSEM
+        - ForkColliderLinearSEM
+        - LayeredSparseLinearSEM
+        - LayeredSparseLinearSEM_Laplace
+        - LayeredSparseLinearSEM_StudentT3
+        - ChainNonlinearSEM
+        - ForkColliderNonlinearSEM
+        - LayeredSparseNonlinearSEM
+      experiments: ${reporting.experiment_groups.benchmark_expansion_observable_shallow_only}
+
+    - id: intervention_aligned_proxy_calibration
+      kind: intervention_aligned_proxy_calibration
+      enabled: true
+      dataset_order:
+        - LinearSEMDataset
+        - ElectricalCircuitData
+      alignment_target_order:
+        - observable_state
+        - sem_truth
+      experiments: ${reporting.experiment_groups.core_alignment_proxy_shallow_only}
+
+    - id: intervention_effect_calibration
+      kind: effect_calibration
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+    - id: structural_architecture_robustness
+      kind: structural_architecture_robustness
+      enabled: true
+      model_order: [ShallowMLP, DeepMLP, BottleneckMLP, GatedMLP, ResidualMLP, TabularMLP]
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+    - id: intervention_architecture_robustness
+      kind: intervention_architecture_robustness
+      enabled: true
+      model_order: [ShallowMLP, DeepMLP, BottleneckMLP, GatedMLP, ResidualMLP, TabularMLP]
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+    - id: structural_extraction_modes_truth
+      kind: structural_extraction_modes_truth
+      enabled: true
+      experiments: ${reporting.experiment_groups.additional_extraction_modes}
+
+    - id: structural_sample_size_robustness
+      kind: structural_sample_size_robustness
+      enabled: true
+      experiments: ${reporting.experiment_groups.sample_size_sweep}
+
+    - id: structural_ci_threshold_robustness
+      kind: structural_ci_threshold_robustness
+      enabled: true
+      experiments: ${reporting.experiment_groups.ci_threshold_sweep}
+
+    - id: structural_ci_mismatch_sensitivity
+      kind: structural_ci_mismatch_sensitivity
+      enabled: true
+      proper_experiments: ${reporting.experiment_groups.ci_mismatch_proper}
+      mismatch_experiments: ${reporting.experiment_groups.ci_mismatch_mismatch}
+
+    - id: structural_node_count_linear_sem
+      kind: structural_node_count_robustness
+      enabled: true
+      dataset_id: LinearSEMDataset
+      model_id: ShallowMLP
+      node_counts: [6, 7, 8, 9, 10]
+      title: Linear SEM Node-Count Robustness (Shallow MLP)
+      experiments: ${reporting.experiment_groups.node_count_linear_sem}
+
+    - id: structural_node_count_layered_sparse_linear_shallow
+      kind: structural_node_count_robustness
+      enabled: true
+      dataset_id: LayeredSparseLinearSEM
+      model_id: ShallowMLP
+      node_counts: [6, 8, 10, 12, 14]
+      title: Layered Sparse Linear SEM Node-Count Robustness (Shallow MLP)
+      experiments: ${reporting.experiment_groups.node_count_layered_sparse_linear_shallow}
+
+    - id: structural_node_count_layered_sparse_linear_tabular
+      kind: structural_node_count_robustness
+      enabled: true
+      dataset_id: LayeredSparseLinearSEM
+      model_id: TabularMLP
+      node_counts: [6, 8, 10, 12, 14]
+      title: Layered Sparse Linear SEM Node-Count Robustness (Tabular MLP)
+      experiments: ${reporting.experiment_groups.node_count_layered_sparse_linear_tabular}
+
+    - id: structural_node_count_layered_sparse_nonlinear_shallow
+      kind: structural_node_count_robustness
+      enabled: true
+      dataset_id: LayeredSparseNonlinearSEM
+      model_id: ShallowMLP
+      node_counts: [6, 8, 10, 12, 14]
+      title: Layered Sparse Nonlinear SEM Node-Count Robustness (Shallow MLP)
+      experiments: ${reporting.experiment_groups.node_count_layered_sparse_nonlinear_shallow}
+
+    - id: structural_node_count_layered_sparse_nonlinear_tabular
+      kind: structural_node_count_robustness
+      enabled: true
+      dataset_id: LayeredSparseNonlinearSEM
+      model_id: TabularMLP
+      node_counts: [6, 8, 10, 12, 14]
+      title: Layered Sparse Nonlinear SEM Node-Count Robustness (Tabular MLP)
+      experiments: ${reporting.experiment_groups.node_count_layered_sparse_nonlinear_tabular}
+
+    - id: training_dynamics
+      kind: training_dynamics
+      enabled: true
+      model_order: [ShallowMLP, DeepMLP, BottleneckMLP, GatedMLP, ResidualMLP, TabularMLP]
+      height: 7.2
+      experiments: ${reporting.experiment_groups.training_dynamics_core_aligned}
+
+    - id: structure_intervention_coupling
+      kind: structure_intervention_coupling
+      enabled: true
+      experiments: ${reporting.experiment_groups.core_observable_models}
+
+hydra:
+  run:
+    dir: ${reporting.output_dir}
+  job:
+    chdir: true

@@ -18,8 +18,10 @@ interventional fidelity.
 - `causaldiscovery.py`: data-level and model-level causal discovery
 - `pag_cleanup.py`: combined PAG aggregation and cleanup
 - `interventions.py`: SEM-level and model-level intervention analyses
+- `reporting.py`: final figure, table, statistics, and manifest generation
 - `config/`: Hydra configuration files for datasets, models, experiments, and
   pipeline steps
+- `reporting/figures/`: report figure and table builders
 - `data/`: synthetic SEM datasets and intervention-ready dataset interfaces
 - `models/`: MLP model definitions
 - `metrics/`: structural and performance metrics
@@ -56,7 +58,7 @@ add both repositories to `PYTHONPATH`.
 ```bash
 cd ..
 git clone https://github.com/SteinerHannes/causality-lab.git
-cd GlobalCausalAnalysis
+cd NeuralCausalDiscovery
 export PYTHONPATH="$(pwd):$(cd ../causality-lab && pwd):$PYTHONPATH"
 ```
 
@@ -83,6 +85,17 @@ python pipeline.py --config-name experiments/linear_sem_shallow_mlp_align_observ
 Pipeline steps are controlled in the selected experiment config and in
 `config/pipeline/Default.yaml`. New runs write their results to
 `outputs/experiments/<experiment.name>/`.
+
+## Generating Reporting Artifacts
+
+The reporting entrypoint builds the thesis figures, summary tables, statistics,
+and JSON manifests from the experiment outputs:
+
+```bash
+python reporting.py --config-name reporting_config
+```
+
+The output directory is configured in `config/reporting_config.yaml`.
 
 ## Final Artifacts
 
