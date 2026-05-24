@@ -1,0 +1,66 @@
+=== [Causal Discovery] Fold 2 (2/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/metadata.json
+Test:  CI( 0 , 1 | () ) = 0.535156124789457
+Test:  CI( 0 , 2 | () ) = 0.17182490379933846
+Test:  CI( 1 , 2 | () ) = 0.7134917651031452
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.38078120623093303
+Test:  CI( 2 , 3 | () ) = 0.17067483533452754
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.4205264699734359
+Test:  CI( 2 , 4 | () ) = 0.17058403522678312
+Test:  CI( 3 , 4 | () ) = 0.0
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.2266520748067502
+Test:  CI( 2 , 5 | () ) = 0.13664648342459862
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.31159629155110813
+Test:  CI( 0 , 5 | (3,) ) = 0.29622560594383307
+Test:  CI( 3 , 5 | (4,) ) = 0.2176238485005242
+Saved adjacency matrix to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 0.6677279914230354
+Test:  CI( 0 , 2 | () ) = 0.5411403621823181
+Test:  CI( 1 , 2 | () ) = 0.8417251288430321
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.4857475467660899
+Test:  CI( 2 , 3 | () ) = 0.27121924050046475
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.7622509338284309
+Test:  CI( 2 , 4 | () ) = 0.1584181595866958
+Test:  CI( 3 , 4 | () ) = 0.0
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.8715608524642353
+Test:  CI( 2 , 5 | () ) = 0.43432539080270294
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.5603791200220005
+Test:  CI( 0 , 5 | (3,) ) = 0.30622821917095977
+Test:  CI( 3 , 5 | (4,) ) = 0.4779227022163983
+Saved metrics to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/performance_metrics.json
+Saved baseline metrics to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/pag_vs_pag_metrics.json
+Found 2 differences:
+  1. Missing: 1 --- 3 (DAG: directed_ij)
+  2. Missing: 2 --- 5 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/edge_comparison.txt
+Found 2 differences:
+  1. Missing: 1 --- 3 (DAG: directed_ij)
+  2. Missing: 2 --- 5 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/edge_comparison_baseline.txt
+No differences found - graphs match perfectly!
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/2/baseline_graph_adj.npy

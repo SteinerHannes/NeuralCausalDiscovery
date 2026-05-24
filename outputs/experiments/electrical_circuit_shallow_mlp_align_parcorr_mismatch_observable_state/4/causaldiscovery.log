@@ -1,0 +1,78 @@
+=== [Causal Discovery] Fold 4 (4/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/metadata.json
+Test:  CI( 0 , 1 | () ) = 0.6087503313249236
+Test:  CI( 0 , 2 | () ) = 0.4590090726527669
+Test:  CI( 1 , 2 | () ) = 0.3631887400379248
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.2698847606121131
+Test:  CI( 2 , 3 | () ) = 0.24846065005893148
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.3132591830513656
+Test:  CI( 2 , 4 | () ) = 0.1952287570307163
+Test:  CI( 3 , 4 | () ) = 0.0
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.49805393600793635
+Test:  CI( 2 , 5 | () ) = 0.37267073826007513
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.9666990862093265
+Test:  CI( 0 , 5 | (3,) ) = 0.3791772163120499
+Test:  CI( 3 , 5 | (4,) ) = 0.001031360819444771
+Test:  CI( 4 , 5 | (3,) ) = 0.09439199430931922
+Saved adjacency matrix to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 0.03744293787254871
+Test:  CI( 0 , 2 | () ) = 0.42549569683335964
+Test:  CI( 1 , 2 | () ) = 0.6945720358642249
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.0004592781291594683
+Test:  CI( 2 , 3 | () ) = 0.6467263899837248
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.003373372035409883
+Test:  CI( 2 , 4 | () ) = 0.6293087925002683
+Test:  CI( 3 , 4 | () ) = 0.0
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.00029611483398550575
+Test:  CI( 2 , 5 | () ) = 0.42235702019200083
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.0
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.0013204613902328965
+Test:  CI( 0 , 4 | (1,) ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.276738700610746
+Test:  CI( 1 , 4 | (3,) ) = 0.2867464760077265
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.8567031523595965
+Test:  CI( 1 , 5 | (3,) ) = 0.2724911808049362
+Test:  CI( 3 , 5 | (4,) ) = 0.9503371295345668
+Saved metrics to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/performance_metrics.json
+Saved baseline metrics to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/pag_vs_pag_metrics.json
+Found 4 differences:
+  1. Missing: 1 --- 3 (DAG: directed_ij)
+  2. Missing: 2 --- 5 (DAG: directed_ij)
+  3. Extra: 3 --- 5 (PAG: directed_ij)
+  4. Missing: 4 --- 5 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/edge_comparison.txt
+Found 1 differences:
+  1. Missing: 2 --- 5 (DAG: directed_ij)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/edge_comparison_baseline.txt
+Found 3 differences:
+  1. Missing: 1 --- 3 (Reference PAG: partial_ij)
+  2. Extra: 3 --- 5 (PAG: directed_ij)
+  3. Missing: 4 --- 5 (Reference PAG: directed_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/electrical_circuit_shallow_mlp_align_parcorr_mismatch_observable_state/4/baseline_graph_adj.npy
