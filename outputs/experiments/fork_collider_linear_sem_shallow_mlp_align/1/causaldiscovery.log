@@ -1,0 +1,84 @@
+=== [Causal Discovery] Fold 1 (1/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/metadata.json
+Test:  CI( 0 , 1 | () ) = 0.26841492853328663
+Test:  CI( 0 , 2 | () ) = 0.0
+Test:  CI( 1 , 2 | () ) = 0.00020297275808367488
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.0006001664807047113
+Test:  CI( 2 , 3 | () ) = 0.0
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.3323390676992968
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.0
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.7022093858186738
+Test:  CI( 2 , 5 | () ) = 0.0
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.0
+Test:  CI( 0 , 2 | (1,) ) = 0.0
+Test:  CI( 1 , 2 | (0,) ) = 8.504308368628699e-14
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 0 , 3 | (2,) ) = 0.42490151793751263
+Test:  CI( 1 , 3 | (2,) ) = 0.09579187724077531
+Test:  CI( 0 , 4 | (2,) ) = 0.0672900598743078
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 5 | (2,) ) = 0.012694708901095586
+Test:  CI( 2 , 5 | (3,) ) = 1.645350522494482e-13
+Test:  CI( 2 , 5 | (4,) ) = 0.5811233038131627
+Test:  CI( 3 , 5 | (4,) ) = 0.37560519656593194
+Test:  CI( 3 , 4 | (0, 2) ) = 0.0
+Test:  CI( 3 , 4 | (1, 2) ) = 0.0
+Test:  CI( 3 , 4 | (0, 1, 2) ) = 0.0
+Saved adjacency matrix to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 0.15163264160328183
+Test:  CI( 0 , 2 | () ) = 0.0
+Test:  CI( 1 , 2 | () ) = 1.0757366450953043e-06
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 5.160156225270107e-05
+Test:  CI( 2 , 3 | () ) = 0.0
+Test:  CI( 0 , 4 | () ) = 0.06291433405820968
+Test:  CI( 1 , 4 | () ) = 0.44260518319891595
+Test:  CI( 2 , 4 | () ) = 0.03963599970451881
+Test:  CI( 3 , 4 | () ) = 0.0012621462954276463
+Test:  CI( 0 , 5 | () ) = 0.3699907407205014
+Test:  CI( 1 , 5 | () ) = 0.8013675710012271
+Test:  CI( 2 , 5 | () ) = 0.2647989397776378
+Test:  CI( 3 , 5 | () ) = 0.005247685830860327
+Test:  CI( 4 , 5 | () ) = 0.0
+Test:  CI( 0 , 2 | (1,) ) = 0.0
+Test:  CI( 1 , 2 | (0,) ) = 7.810685431763886e-11
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 0 , 3 | (2,) ) = 0.750987496374041
+Test:  CI( 1 , 3 | (2,) ) = 0.9748561299506533
+Test:  CI( 3 , 5 | (4,) ) = 0.7434060030590208
+Saved metrics to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/performance_metrics.json
+Saved baseline metrics to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/pag_vs_pag_metrics.json
+Found 2 differences:
+  1. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 2 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/edge_comparison.txt
+Found 2 differences:
+  1. Missing: 2 --- 4 (DAG: directed_ij)
+  2. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 2 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/edge_comparison_baseline.txt
+Found 1 differences:
+  1. Extra: 2 --- 4 (PAG: bidirected)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/fork_collider_linear_sem_shallow_mlp_align/1/baseline_graph_adj.npy
