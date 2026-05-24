@@ -1,0 +1,143 @@
+=== [Causal Discovery] Fold 1 (1/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/metadata.json
+Test:  CI( 0 , 1 | () ) = 0.2810907650193286
+Test:  CI( 0 , 2 | () ) = 0.0
+Test:  CI( 1 , 2 | () ) = 0.0002088579676216007
+Test:  CI( 0 , 3 | () ) = 0.009005163864382215
+Test:  CI( 1 , 3 | () ) = 3.6811820258719763e-10
+Test:  CI( 2 , 3 | () ) = 0.0
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.008220016379917983
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 1.8074430840897548e-13
+Test:  CI( 0 , 5 | () ) = 3.013145288832675e-12
+Test:  CI( 1 , 5 | () ) = 3.220748072685353e-07
+Test:  CI( 2 , 5 | () ) = 0.0
+Test:  CI( 3 , 5 | () ) = 1.892817599458141e-05
+Test:  CI( 4 , 5 | () ) = 0.0004995045950224597
+Test:  CI( 0 , 2 | (1,) ) = 0.0
+Test:  CI( 1 , 2 | (0,) ) = 9.592326932761353e-14
+Test:  CI( 0 , 3 | (1,) ) = 0.0003063744209723662
+Test:  CI( 0 , 3 | (2,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 1.3738121751316612e-11
+Test:  CI( 1 , 3 | (2,) ) = 5.370408111549096e-07
+Test:  CI( 2 , 3 | (0,) ) = 0.0
+Test:  CI( 2 , 3 | (1,) ) = 0.0
+Test:  CI( 0 , 4 | (1,) ) = 0.0
+Test:  CI( 0 , 4 | (2,) ) = 0.0003375030541032942
+Test:  CI( 0 , 4 | (3,) ) = 0.0
+Test:  CI( 1 , 4 | (0,) ) = 0.008164751809753623
+Test:  CI( 1 , 4 | (2,) ) = 0.0
+Test:  CI( 1 , 4 | (3,) ) = 0.0
+Test:  CI( 2 , 4 | (0,) ) = 8.237854842718662e-14
+Test:  CI( 2 , 4 | (1,) ) = 0.0
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (0,) ) = 7.771561172376096e-15
+Test:  CI( 3 , 4 | (1,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.7991150855994475
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (2,) ) = 0.4781402792361882
+Test:  CI( 1 , 5 | (2,) ) = 0.0004505405533294926
+Test:  CI( 1 , 5 | (3,) ) = 0.00036964404463812883
+Test:  CI( 1 , 5 | (4,) ) = 1.0895595536908331e-10
+Test:  CI( 2 , 5 | (1,) ) = 0.0
+Test:  CI( 2 , 5 | (3,) ) = 0.0
+Test:  CI( 2 , 5 | (4,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.02346952119153034
+Test:  CI( 4 , 5 | (1,) ) = 1.7477427682877078e-07
+Test:  CI( 4 , 5 | (2,) ) = 1.701705443224455e-11
+Test:  CI( 4 , 5 | (1, 2) ) = 1.1460576931909827e-09
+Saved adjacency matrix to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 0.15163264160328183
+Test:  CI( 0 , 2 | () ) = 0.0
+Test:  CI( 1 , 2 | () ) = 1.0757366450953043e-06
+Test:  CI( 0 , 3 | () ) = 1.5643258732822574e-07
+Test:  CI( 1 , 3 | () ) = 2.200772780458493e-06
+Test:  CI( 2 , 3 | () ) = 0.0
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.2556375210075166
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 3.4993419273376958e-09
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.0
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 2.2866086801798247e-10
+Test:  CI( 0 , 2 | (1,) ) = 0.0
+Test:  CI( 1 , 2 | (0,) ) = 7.810685431763886e-11
+Test:  CI( 0 , 3 | (1,) ) = 4.6385692664685507e-07
+Test:  CI( 0 , 3 | (2,) ) = 1.8545969315830746e-07
+Test:  CI( 1 , 3 | (0,) ) = 6.393199363463609e-06
+Test:  CI( 1 , 3 | (2,) ) = 0.06008668448735177
+Test:  CI( 2 , 3 | (0,) ) = 0.0
+Test:  CI( 0 , 4 | (2,) ) = 0.0003814606669152454
+Test:  CI( 0 , 4 | (3,) ) = 0.0
+Test:  CI( 2 , 4 | (0,) ) = 3.1686488988214023e-09
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (0,) ) = 0.002350404279562568
+Test:  CI( 3 , 4 | (2,) ) = 0.006242194996982864
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (2,) ) = 0.004130163570222001
+Test:  CI( 0 , 5 | (3,) ) = 1.9649837312840646e-11
+Test:  CI( 0 , 5 | (4,) ) = 1.2461901954807786e-08
+Test:  CI( 1 , 5 | (0,) ) = 0.0
+Test:  CI( 1 , 5 | (2,) ) = 0.0
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 1 , 5 | (4,) ) = 0.0
+Test:  CI( 2 , 5 | (0,) ) = 0.0
+Test:  CI( 2 , 5 | (1,) ) = 0.0
+Test:  CI( 2 , 5 | (3,) ) = 0.0
+Test:  CI( 2 , 5 | (4,) ) = 0.0
+Test:  CI( 3 , 5 | (0,) ) = 1.1321610315917496e-11
+Test:  CI( 3 , 5 | (1,) ) = 3.999023334699814e-13
+Test:  CI( 3 , 5 | (2,) ) = 0.6314965152782805
+Test:  CI( 4 , 5 | (0,) ) = 0.5041810938036497
+Test:  CI( 3 , 4 | (0, 2) ) = 0.14158972625351773
+Saved metrics to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/performance_metrics.json
+Saved baseline metrics to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/pag_vs_pag_metrics.json
+Found 9 differences:
+  1. Wrong orientation: 0 --- 2 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Extra: 0 --- 4 (PAG: bidirected)
+  4. Wrong orientation: 1 --- 2 (DAG: directed_ij, PAG: bidirected)
+  5. Extra: 1 --- 3 (PAG: bidirected)
+  6. Wrong orientation: 1 --- 4 (DAG: directed_ij, PAG: bidirected)
+  7. Wrong orientation: 2 --- 3 (DAG: directed_ij, PAG: bidirected)
+  8. Wrong orientation: 2 --- 5 (DAG: directed_ij, PAG: bidirected)
+  9. Extra: 4 --- 5 (PAG: bidirected)
+Saved edge comparison details to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/edge_comparison.txt
+Found 7 differences:
+  1. Wrong orientation: 0 --- 2 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Extra: 0 --- 4 (PAG: directed_ij)
+  4. Extra: 0 --- 5 (PAG: bidirected)
+  5. Missing: 1 --- 4 (DAG: directed_ij)
+  6. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  7. Wrong orientation: 2 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 1 --- 2 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 5 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/edge_comparison_baseline.txt
+Found 7 differences:
+  1. Wrong orientation: 0 --- 4 (Reference PAG: directed_ij, PAG: bidirected)
+  2. Missing: 0 --- 5 (Reference PAG: bidirected)
+  3. Extra: 1 --- 3 (PAG: bidirected)
+  4. Extra: 1 --- 4 (PAG: bidirected)
+  5. Wrong orientation: 2 --- 3 (Reference PAG: directed_ij, PAG: bidirected)
+  6. Wrong orientation: 2 --- 4 (Reference PAG: bidirected, PAG: directed_ij)
+  7. Extra: 4 --- 5 (PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 1 --- 2 (Reference PAG: partial_ij, PAG: bidirected)
+  2. Partial orientation: 1 --- 5 (Reference PAG: partial_ij, PAG: directed_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/layered_sparse_linear_sem_tabular_mlp_align/1/baseline_graph_adj.npy
