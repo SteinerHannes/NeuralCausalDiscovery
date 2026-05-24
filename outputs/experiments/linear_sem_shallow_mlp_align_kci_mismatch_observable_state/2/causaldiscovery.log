@@ -1,0 +1,101 @@
+=== [Causal Discovery] Fold 2 (2/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/alignment_results.csv
+Step: prepare ground-truth data
+Key: (176, 6, 3, 3, 2, 10, 10000, 0.5, 2.0, 0.8, 0.1, 0.1, 1000, 2) - Generating new DAG and data...
+Seed: 176, Fold: 2
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/metadata.json
+CI(0, 1 | ()) p=0 -> indep=False
+CI(0, 2 | ()) p=0.167 -> indep=True
+CI(1, 2 | ()) p=0.6849 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=0 -> indep=False
+CI(2, 3 | ()) p=0.1597 -> indep=True
+CI(0, 4 | ()) p=1.735e-05 -> indep=False
+CI(1, 4 | ()) p=0.02987 -> indep=True
+CI(2, 4 | ()) p=0 -> indep=False
+CI(3, 4 | ()) p=2.506e-05 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=0 -> indep=False
+CI(2, 5 | ()) p=0.2007 -> indep=True
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=3.818e-05 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=0.2384 -> indep=True
+CI(0, 4 | (2,)) p=0 -> indep=False
+CI(0, 4 | (3,)) p=0.001524 -> indep=False
+CI(2, 4 | (0,)) p=0 -> indep=False
+CI(2, 4 | (3,)) p=0 -> indep=False
+CI(3, 4 | (0,)) p=0.003393 -> indep=False
+CI(3, 4 | (2,)) p=0 -> indep=False
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=0.1199 -> indep=True
+CI(1, 5 | (3,)) p=0 -> indep=False
+CI(1, 5 | (4,)) p=0 -> indep=False
+CI(3, 5 | (1,)) p=0 -> indep=False
+CI(3, 5 | (4,)) p=0 -> indep=False
+CI(4, 5 | (1,)) p=0.006673 -> indep=False
+CI(4, 5 | (3,)) p=0.0471 -> indep=True
+CI(3, 4 | (0, 2)) p=0.04154 -> indep=True
+Saved adjacency matrix to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/learned_graph_adj.npy
+CI(0, 1 | ()) p=7.76e-13 -> indep=False
+CI(0, 2 | ()) p=0.0233 -> indep=True
+CI(1, 2 | ()) p=0.9858 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=1.046e-09 -> indep=False
+CI(2, 3 | ()) p=0.01142 -> indep=True
+CI(0, 4 | ()) p=0.5686 -> indep=True
+CI(1, 4 | ()) p=0.4035 -> indep=True
+CI(2, 4 | ()) p=0 -> indep=False
+CI(3, 4 | ()) p=0.0002039 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=0 -> indep=False
+CI(2, 5 | ()) p=0.01688 -> indep=True
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0.006714 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=0.4829 -> indep=True
+CI(2, 4 | (3,)) p=9.104e-15 -> indep=False
+CI(3, 4 | (2,)) p=0.00122 -> indep=False
+CI(0, 5 | (1,)) p=1.428e-13 -> indep=False
+CI(0, 5 | (3,)) p=0.1669 -> indep=True
+CI(1, 5 | (3,)) p=1.422e-13 -> indep=False
+CI(1, 5 | (4,)) p=0 -> indep=False
+CI(3, 5 | (1,)) p=0 -> indep=False
+CI(3, 5 | (4,)) p=0 -> indep=False
+CI(4, 5 | (1,)) p=0.004393 -> indep=False
+CI(4, 5 | (3,)) p=0.3895 -> indep=True
+Saved metrics to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/performance_metrics.json
+Saved baseline metrics to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/pag_vs_pag_metrics.json
+Found 4 differences:
+  1. Wrong orientation: 0 --- 1 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 4 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+  4. Missing: 3 --- 4 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/edge_comparison.txt
+Found 3 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/edge_comparison_baseline.txt
+Found 2 differences:
+  1. Extra: 0 --- 4 (PAG: bidirected)
+  2. Missing: 3 --- 4 (Reference PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (Reference PAG: partial_ij, PAG: bidirected)
+  2. Partial orientation: 0 --- 3 (Reference PAG: partial_ij, PAG: directed_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/linear_sem_shallow_mlp_align_kci_mismatch_observable_state/2/baseline_graph_adj.npy
