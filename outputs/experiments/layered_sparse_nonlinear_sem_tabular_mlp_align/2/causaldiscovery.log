@@ -1,0 +1,106 @@
+=== [Causal Discovery] Fold 2 (2/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/metadata.json
+CI(0, 1 | ()) p=0.08555 -> indep=True
+CI(0, 2 | ()) p=0.0002038 -> indep=False
+CI(1, 2 | ()) p=0.001591 -> indep=False
+CI(0, 3 | ()) p=3.088e-05 -> indep=False
+CI(1, 3 | ()) p=0.002704 -> indep=False
+CI(2, 3 | ()) p=3.098e-09 -> indep=False
+CI(0, 4 | ()) p=5.781e-08 -> indep=False
+CI(1, 4 | ()) p=0.02849 -> indep=True
+CI(2, 4 | ()) p=0 -> indep=False
+CI(3, 4 | ()) p=0 -> indep=False
+CI(0, 5 | ()) p=0.0003167 -> indep=False
+CI(1, 5 | ()) p=0 -> indep=False
+CI(2, 5 | ()) p=0 -> indep=False
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 2 | (1,)) p=4.76e-07 -> indep=False
+CI(1, 2 | (0,)) p=0.00154 -> indep=False
+CI(0, 3 | (1,)) p=0.005436 -> indep=False
+CI(0, 3 | (2,)) p=0.01015 -> indep=True
+CI(1, 3 | (2,)) p=0.03137 -> indep=True
+CI(0, 4 | (2,)) p=0.01249 -> indep=True
+CI(2, 4 | (3,)) p=3.079e-11 -> indep=False
+CI(3, 4 | (2,)) p=0.001166 -> indep=False
+CI(0, 5 | (1,)) p=0.0018 -> indep=False
+CI(0, 5 | (2,)) p=0.2219 -> indep=True
+CI(1, 5 | (2,)) p=1.038e-06 -> indep=False
+CI(1, 5 | (3,)) p=1.559e-11 -> indep=False
+CI(1, 5 | (4,)) p=3.22e-15 -> indep=False
+CI(2, 5 | (1,)) p=3.136e-06 -> indep=False
+CI(2, 5 | (3,)) p=1.407e-08 -> indep=False
+CI(2, 5 | (4,)) p=0.006733 -> indep=False
+CI(3, 5 | (1,)) p=0.0001975 -> indep=False
+CI(3, 5 | (2,)) p=0.0005303 -> indep=False
+CI(3, 5 | (4,)) p=0.004843 -> indep=False
+CI(4, 5 | (1,)) p=7.709e-05 -> indep=False
+CI(4, 5 | (2,)) p=0.0003821 -> indep=False
+CI(4, 5 | (3,)) p=0.002526 -> indep=False
+CI(3, 4 | (0, 2)) p=0.0003266 -> indep=False
+CI(1, 5 | (2, 3)) p=7.441e-09 -> indep=False
+CI(4, 5 | (2, 3)) p=0.09135 -> indep=True
+Saved adjacency matrix to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.04262 -> indep=True
+CI(0, 2 | ()) p=0.0004737 -> indep=False
+CI(1, 2 | ()) p=0.2082 -> indep=True
+CI(0, 3 | ()) p=0.008971 -> indep=False
+CI(1, 3 | ()) p=0.03037 -> indep=True
+CI(2, 3 | ()) p=0.1936 -> indep=True
+CI(0, 4 | ()) p=0.1529 -> indep=True
+CI(1, 4 | ()) p=0.1624 -> indep=True
+CI(2, 4 | ()) p=2.016e-05 -> indep=False
+CI(3, 4 | ()) p=0.9204 -> indep=True
+CI(0, 5 | ()) p=0.2336 -> indep=True
+CI(1, 5 | ()) p=1.208e-06 -> indep=False
+CI(2, 5 | ()) p=1.018e-06 -> indep=False
+CI(3, 5 | ()) p=0.6423 -> indep=True
+CI(4, 5 | ()) p=0.3721 -> indep=True
+CI(1, 5 | (2,)) p=3.486e-06 -> indep=False
+CI(2, 5 | (1,)) p=6.712e-06 -> indep=False
+Saved metrics to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/performance_metrics.json
+Saved baseline metrics to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/pag_vs_pag_metrics.json
+Found 7 differences:
+  1. Missing: 0 --- 3 (DAG: directed_ij)
+  2. Wrong orientation: 1 --- 2 (DAG: directed_ij, PAG: bidirected)
+  3. Missing: 1 --- 4 (DAG: directed_ij)
+  4. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+  5. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  6. Extra: 3 --- 4 (PAG: bidirected)
+  7. Extra: 3 --- 5 (PAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/edge_comparison.txt
+Found 7 differences:
+  1. Wrong orientation: 0 --- 2 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Missing: 1 --- 2 (DAG: directed_ij)
+  4. Missing: 1 --- 4 (DAG: directed_ij)
+  5. Missing: 2 --- 3 (DAG: directed_ij)
+  6. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  7. Wrong orientation: 2 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 1 --- 5 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/edge_comparison_baseline.txt
+Found 6 differences:
+  1. Missing: 0 --- 3 (Reference PAG: bidirected)
+  2. Extra: 1 --- 2 (PAG: bidirected)
+  3. Extra: 2 --- 3 (PAG: directed_ij)
+  4. Wrong orientation: 2 --- 5 (Reference PAG: bidirected, PAG: directed_ij)
+  5. Extra: 3 --- 4 (PAG: bidirected)
+  6. Extra: 3 --- 5 (PAG: directed_ij)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (Reference PAG: bidirected, PAG: partial_ij)
+  2. Partial orientation: 1 --- 5 (Reference PAG: partial_ij, PAG: bidirected)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/layered_sparse_nonlinear_sem_tabular_mlp_align/2/baseline_graph_adj.npy
