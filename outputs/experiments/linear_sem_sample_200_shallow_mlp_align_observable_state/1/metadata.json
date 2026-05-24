@@ -1,0 +1,24 @@
+{
+  "fold": 1,
+  "dataset": {
+    "name": "LinearSEMDataset",
+    "target": "data.LinearSEMDataset.LinearSEMDataset"
+  },
+  "model": {
+    "name": "ShallowMLP",
+    "target": "models.ShallowMLP.ShallowMLP"
+  },
+  "ci_test": {
+    "name": "CondIndepParCorr",
+    "target": "causal_discovery_utils.cond_indep_tests.CondIndepParCorr",
+    "threshold": 0.01
+  },
+  "sample_size": 200,
+  "baseline_sample_size": 200,
+  "alignment": {
+    "enabled": true,
+    "used_for_causaldiscovery": true,
+    "status": "aligned",
+    "target_mode": "observable_state"
+  }
+}
