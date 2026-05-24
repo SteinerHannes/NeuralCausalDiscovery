@@ -1,0 +1,24 @@
+{
+  "fold": 2,
+  "dataset": {
+    "name": "LinearSEMDataset",
+    "target": "data.LinearSEMDataset.LinearSEMDataset"
+  },
+  "model": {
+    "name": "MLPModel",
+    "target": "models.MLPModel.MLPModel"
+  },
+  "ci_test": {
+    "name": "CondIndepParCorr",
+    "target": "causal_discovery_utils.cond_indep_tests.CondIndepParCorr",
+    "threshold": 0.01
+  },
+  "sample_size": 150,
+  "baseline_sample_size": 150,
+  "alignment": {
+    "enabled": false,
+    "used_for_causaldiscovery": false,
+    "status": "raw",
+    "target_mode": null
+  }
+}
