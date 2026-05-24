@@ -1,0 +1,7 @@
+model_id,model_family,input_size,output_size,hidden_structure,components,trainable_parameters,total_parameters,non_trainable_parameters
+ShallowMLP,Shallow MLP,3,3,32--32,ReLU,1283,1283,0
+DeepMLP,Deep MLP,3,3,64--64--64--64,"GELU, dropout 0.1",12931,12931,0
+BottleneckMLP,Bottleneck MLP,3,3,128--16--128,SiLU,5139,5139,0
+GatedMLP,Gated MLP,3,3,64--64--64--64,"Gated blocks, SiLU, dropout 0.1",25667,25667,0
+ResidualMLP,Residual MLP,3,3,"128 units, 3 residual blocks","Residual blocks, GELU",99971,99971,0
+TabularMLP,Tabular MLP,3,3,256--128--64,"SiLU, batch normalization, dropout 0.1",43267,43267,0
