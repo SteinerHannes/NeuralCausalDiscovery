@@ -1,0 +1,96 @@
+=== [Causal Discovery] Fold 2 (2/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/metadata.json
+Test:  CI( 0 , 1 | () ) = 0.0
+Test:  CI( 0 , 2 | () ) = 0.7409832268042285
+Test:  CI( 1 , 2 | () ) = 0.598093438002703
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.0
+Test:  CI( 2 , 3 | () ) = 0.6058658582996441
+Test:  CI( 0 , 4 | () ) = 0.00011538167994440407
+Test:  CI( 1 , 4 | () ) = 0.00209803427342381
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 5.6974312380608794e-05
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.5779533778704928
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 7.626728235110569e-05
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.14821477817384765
+Test:  CI( 0 , 4 | (1,) ) = 0.01924209295375756
+Test:  CI( 1 , 4 | (2,) ) = 0.0
+Test:  CI( 1 , 4 | (3,) ) = 0.7395120910694897
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.00536383227975934
+Test:  CI( 0 , 5 | (4,) ) = 0.0
+Test:  CI( 1 , 5 | (0,) ) = 0.0
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 1 , 5 | (4,) ) = 0.0
+Test:  CI( 3 , 5 | (0,) ) = 0.75422013955819
+Test:  CI( 4 , 5 | (0,) ) = 0.3800897781740533
+Saved adjacency matrix to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 1.2261303083960229e-12
+Test:  CI( 0 , 2 | () ) = 0.3460200755034273
+Test:  CI( 1 , 2 | () ) = 0.9782381479073041
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 9.802187950214147e-10
+Test:  CI( 2 , 3 | () ) = 0.20182948031662407
+Test:  CI( 0 , 4 | () ) = 0.8508821104662925
+Test:  CI( 1 , 4 | () ) = 0.39407655006914877
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.0008270142521740187
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.6134509458946216
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.021049751975289466
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.8322374504152816
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.001144248098677858
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.0378241679921858
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Saved metrics to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/performance_metrics.json
+Saved baseline metrics to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/pag_vs_pag_metrics.json
+Found 4 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Extra: 0 --- 5 (PAG: partial_ij)
+  3. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  4. Missing: 3 --- 5 (DAG: directed_ij)
+Found 4 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 1 --- 5 (DAG: directed_ij, PAG: partial_ij)
+  4. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/edge_comparison.txt
+Found 4 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  4. Wrong orientation: 3 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/edge_comparison_baseline.txt
+Found 2 differences:
+  1. Extra: 0 --- 5 (PAG: partial_ij)
+  2. Missing: 3 --- 5 (Reference PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 1 --- 5 (Reference PAG: bidirected, PAG: partial_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/linear_sem_pre_activations_residual_mlp_align_observable_state/2/baseline_graph_adj.npy
