@@ -1,0 +1,900 @@
+[2026-04-24 02:22:18,163][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X1']
+[2026-04-24 02:22:18,163][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,163][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,163][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,163][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X1'].
+[2026-04-24 02:22:18,165][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X2']
+[2026-04-24 02:22:18,165][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,165][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,165][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,165][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X2'].
+[2026-04-24 02:22:18,167][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X3']
+[2026-04-24 02:22:18,168][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,169][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,169][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,169][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,169][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,169][dowhy.causal_estimator][INFO] - b: X3~X0+X0*X1
+[2026-04-24 02:22:18,177][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X4']
+[2026-04-24 02:22:18,178][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,178][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,179][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:18,180][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,181][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,181][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,181][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,181][dowhy.causal_estimator][INFO] - b: X4~X0+X0*X1
+[2026-04-24 02:22:18,189][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X5']
+[2026-04-24 02:22:18,190][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,190][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,191][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:18,191][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,192][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,193][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,193][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,193][dowhy.causal_estimator][INFO] - b: X5~X0+X0*X1+X0*X2
+[2026-04-24 02:22:18,243][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X0']
+[2026-04-24 02:22:18,243][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,243][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,244][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,244][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X0'].
+[2026-04-24 02:22:18,245][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X2']
+[2026-04-24 02:22:18,245][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,245][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,245][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,245][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X2'].
+[2026-04-24 02:22:18,247][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X3']
+[2026-04-24 02:22:18,247][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,248][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,248][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,248][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,248][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,248][dowhy.causal_estimator][INFO] - b: X3~X1+X1*X0
+[2026-04-24 02:22:18,255][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X4']
+[2026-04-24 02:22:18,256][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,256][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,256][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:18,257][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,258][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,259][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,259][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,259][dowhy.causal_estimator][INFO] - b: X4~X1+X1*X0
+[2026-04-24 02:22:18,266][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X5']
+[2026-04-24 02:22:18,267][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,267][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,267][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:18,268][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,269][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,270][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,270][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,270][dowhy.causal_estimator][INFO] - b: X5~X1+X1*X0+X1*X2
+[2026-04-24 02:22:18,324][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X0']
+[2026-04-24 02:22:18,324][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,324][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,324][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,324][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X0'].
+[2026-04-24 02:22:18,326][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X1']
+[2026-04-24 02:22:18,326][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,326][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,326][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,326][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X1'].
+[2026-04-24 02:22:18,327][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X3']
+[2026-04-24 02:22:18,327][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,328][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,328][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,328][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X3'].
+[2026-04-24 02:22:18,329][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X4']
+[2026-04-24 02:22:18,329][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,329][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,329][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,329][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X4'].
+[2026-04-24 02:22:18,331][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X5']
+[2026-04-24 02:22:18,332][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,333][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,333][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,333][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,333][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,333][dowhy.causal_estimator][INFO] - b: X5~X2+X2*X3+X2*X0+X2*X1+X2*X4
+[2026-04-24 02:22:18,389][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X0']
+[2026-04-24 02:22:18,389][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,389][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,390][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,390][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X0'].
+[2026-04-24 02:22:18,391][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X1']
+[2026-04-24 02:22:18,391][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,391][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,391][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,391][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X1'].
+[2026-04-24 02:22:18,393][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X2']
+[2026-04-24 02:22:18,393][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,393][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,393][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,393][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X2'].
+[2026-04-24 02:22:18,395][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X4']
+[2026-04-24 02:22:18,396][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,396][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:18,397][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,397][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,397][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,397][dowhy.causal_estimator][INFO] - b: X4~X3
+[2026-04-24 02:22:18,404][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X5']
+[2026-04-24 02:22:18,405][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,405][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:18,406][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X4']
+[2026-04-24 02:22:18,407][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,408][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,408][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,408][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,409][dowhy.causal_estimator][INFO] - b: X5~X3+X3*X2
+[2026-04-24 02:22:18,460][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X0']
+[2026-04-24 02:22:18,460][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,460][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,460][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,460][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X0'].
+[2026-04-24 02:22:18,462][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X1']
+[2026-04-24 02:22:18,462][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,462][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,462][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,462][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X1'].
+[2026-04-24 02:22:18,464][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X2']
+[2026-04-24 02:22:18,464][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,464][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,464][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,464][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X2'].
+[2026-04-24 02:22:18,466][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X3']
+[2026-04-24 02:22:18,466][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,466][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,466][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,466][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X3'].
+[2026-04-24 02:22:18,468][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X5']
+[2026-04-24 02:22:18,468][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,469][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X3']
+[2026-04-24 02:22:18,469][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,470][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,470][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,470][dowhy.causal_estimator][INFO] - b: X5~X4+X4*X2
+[2026-04-24 02:22:18,518][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X0']
+[2026-04-24 02:22:18,519][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,519][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,519][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,519][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X0'].
+[2026-04-24 02:22:18,520][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X1']
+[2026-04-24 02:22:18,520][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,520][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,520][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,520][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X1'].
+[2026-04-24 02:22:18,522][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X2']
+[2026-04-24 02:22:18,522][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,522][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,522][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,522][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X2'].
+[2026-04-24 02:22:18,524][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X3']
+[2026-04-24 02:22:18,524][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,524][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,524][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,524][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X3'].
+[2026-04-24 02:22:18,525][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X4']
+[2026-04-24 02:22:18,525][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,525][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,525][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,526][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X4'].
+[2026-04-24 02:22:18,596][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X1']
+[2026-04-24 02:22:18,597][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,597][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,597][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,597][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X1'].
+[2026-04-24 02:22:18,599][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X2']
+[2026-04-24 02:22:18,599][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,599][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,599][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,599][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X2'].
+[2026-04-24 02:22:18,601][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X3']
+[2026-04-24 02:22:18,601][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,602][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,602][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,602][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,602][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,602][dowhy.causal_estimator][INFO] - b: X3~X0+X0*X1
+[2026-04-24 02:22:18,611][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X4']
+[2026-04-24 02:22:18,612][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,612][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,612][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:18,613][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,614][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,615][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,615][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,615][dowhy.causal_estimator][INFO] - b: X4~X0+X0*X1
+[2026-04-24 02:22:18,624][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X5']
+[2026-04-24 02:22:18,625][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,625][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,626][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:18,627][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,628][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,628][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,628][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,629][dowhy.causal_estimator][INFO] - b: X5~X0+X0*X1+X0*X2
+[2026-04-24 02:22:18,684][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X0']
+[2026-04-24 02:22:18,684][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,684][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,684][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,684][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X0'].
+[2026-04-24 02:22:18,686][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X2']
+[2026-04-24 02:22:18,686][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,686][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,686][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,686][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X2'].
+[2026-04-24 02:22:18,688][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X3']
+[2026-04-24 02:22:18,688][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,689][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,689][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,689][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,689][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,689][dowhy.causal_estimator][INFO] - b: X3~X1+X1*X0
+[2026-04-24 02:22:18,697][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X4']
+[2026-04-24 02:22:18,698][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,698][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,698][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:18,699][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,700][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,700][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,700][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,701][dowhy.causal_estimator][INFO] - b: X4~X1+X1*X0
+[2026-04-24 02:22:18,708][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X5']
+[2026-04-24 02:22:18,709][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,709][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,710][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:18,710][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,711][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,712][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,712][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,712][dowhy.causal_estimator][INFO] - b: X5~X1+X1*X0+X1*X2
+[2026-04-24 02:22:18,765][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X0']
+[2026-04-24 02:22:18,765][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,765][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,765][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,765][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X0'].
+[2026-04-24 02:22:18,767][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X1']
+[2026-04-24 02:22:18,767][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,767][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,767][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,767][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X1'].
+[2026-04-24 02:22:18,769][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X3']
+[2026-04-24 02:22:18,769][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,769][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,769][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,769][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X3'].
+[2026-04-24 02:22:18,771][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X4']
+[2026-04-24 02:22:18,771][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,771][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,771][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,771][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X4'].
+[2026-04-24 02:22:18,773][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X5']
+[2026-04-24 02:22:18,774][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,774][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:18,774][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,774][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,775][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,775][dowhy.causal_estimator][INFO] - b: X5~X2+X2*X3+X2*X0+X2*X1+X2*X4
+[2026-04-24 02:22:18,832][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X0']
+[2026-04-24 02:22:18,832][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,832][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,832][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,832][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X0'].
+[2026-04-24 02:22:18,834][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X1']
+[2026-04-24 02:22:18,834][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,834][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,834][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,834][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X1'].
+[2026-04-24 02:22:18,836][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X2']
+[2026-04-24 02:22:18,836][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,836][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,836][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,836][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X2'].
+[2026-04-24 02:22:18,838][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X4']
+[2026-04-24 02:22:18,839][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,840][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:18,840][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,840][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,840][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,840][dowhy.causal_estimator][INFO] - b: X4~X3
+[2026-04-24 02:22:18,847][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X5']
+[2026-04-24 02:22:18,848][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,849][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:18,849][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X4']
+[2026-04-24 02:22:18,850][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,851][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,852][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,852][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,853][dowhy.causal_estimator][INFO] - b: X5~X3+X3*X2
+[2026-04-24 02:22:18,907][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X0']
+[2026-04-24 02:22:18,907][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,907][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,907][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,907][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X0'].
+[2026-04-24 02:22:18,909][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X1']
+[2026-04-24 02:22:18,909][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,909][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,909][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,909][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X1'].
+[2026-04-24 02:22:18,910][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X2']
+[2026-04-24 02:22:18,911][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,911][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,911][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,911][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X2'].
+[2026-04-24 02:22:18,912][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X3']
+[2026-04-24 02:22:18,912][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,912][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,912][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,912][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X3'].
+[2026-04-24 02:22:18,914][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X5']
+[2026-04-24 02:22:18,915][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:18,916][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X3']
+[2026-04-24 02:22:18,916][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:18,916][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,916][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,916][dowhy.causal_estimator][INFO] - b: X5~X4+X4*X2
+[2026-04-24 02:22:18,965][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X0']
+[2026-04-24 02:22:18,965][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,965][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,965][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,965][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X0'].
+[2026-04-24 02:22:18,967][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X1']
+[2026-04-24 02:22:18,967][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,967][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,967][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,967][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X1'].
+[2026-04-24 02:22:18,968][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X2']
+[2026-04-24 02:22:18,968][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,969][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,969][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,969][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X2'].
+[2026-04-24 02:22:18,970][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X3']
+[2026-04-24 02:22:18,970][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,970][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,970][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,970][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X3'].
+[2026-04-24 02:22:18,972][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X4']
+[2026-04-24 02:22:18,972][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:18,972][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:18,972][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:18,972][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X4'].
+[2026-04-24 02:22:19,044][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X1']
+[2026-04-24 02:22:19,045][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,045][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,045][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,045][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X1'].
+[2026-04-24 02:22:19,047][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X2']
+[2026-04-24 02:22:19,047][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,047][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,047][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,047][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X2'].
+[2026-04-24 02:22:19,049][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X3']
+[2026-04-24 02:22:19,050][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,050][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,050][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,050][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,050][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,051][dowhy.causal_estimator][INFO] - b: X3~X0+X0*X1
+[2026-04-24 02:22:19,059][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X4']
+[2026-04-24 02:22:19,060][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,060][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,061][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,062][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,063][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,063][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,063][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,063][dowhy.causal_estimator][INFO] - b: X4~X0+X0*X1
+[2026-04-24 02:22:19,072][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X5']
+[2026-04-24 02:22:19,073][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,073][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,074][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:19,075][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,075][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,076][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,076][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,076][dowhy.causal_estimator][INFO] - b: X5~X0+X0*X1+X0*X2
+[2026-04-24 02:22:19,131][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X0']
+[2026-04-24 02:22:19,131][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,131][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,131][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,131][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X0'].
+[2026-04-24 02:22:19,133][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X2']
+[2026-04-24 02:22:19,133][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,133][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,133][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,133][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X2'].
+[2026-04-24 02:22:19,135][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X3']
+[2026-04-24 02:22:19,135][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,136][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,136][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,136][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,136][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,136][dowhy.causal_estimator][INFO] - b: X3~X1+X1*X0
+[2026-04-24 02:22:19,144][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X4']
+[2026-04-24 02:22:19,144][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,145][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,145][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,146][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,147][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,147][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,147][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,147][dowhy.causal_estimator][INFO] - b: X4~X1+X1*X0
+[2026-04-24 02:22:19,155][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X5']
+[2026-04-24 02:22:19,155][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,156][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,156][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:19,157][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,158][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,158][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,158][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,159][dowhy.causal_estimator][INFO] - b: X5~X1+X1*X0+X1*X2
+[2026-04-24 02:22:19,212][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X0']
+[2026-04-24 02:22:19,213][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,213][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,213][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,213][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X0'].
+[2026-04-24 02:22:19,214][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X1']
+[2026-04-24 02:22:19,215][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,215][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,215][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,215][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X1'].
+[2026-04-24 02:22:19,216][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X3']
+[2026-04-24 02:22:19,216][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,216][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,217][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,217][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X3'].
+[2026-04-24 02:22:19,218][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X4']
+[2026-04-24 02:22:19,218][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,218][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,218][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,218][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X4'].
+[2026-04-24 02:22:19,220][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X5']
+[2026-04-24 02:22:19,221][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,221][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,222][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,222][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,222][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,222][dowhy.causal_estimator][INFO] - b: X5~X2+X2*X3+X2*X0+X2*X1+X2*X4
+[2026-04-24 02:22:19,280][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X0']
+[2026-04-24 02:22:19,280][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,280][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,280][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,280][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X0'].
+[2026-04-24 02:22:19,282][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X1']
+[2026-04-24 02:22:19,282][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,282][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,282][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,282][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X1'].
+[2026-04-24 02:22:19,284][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X2']
+[2026-04-24 02:22:19,284][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,284][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,284][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,284][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X2'].
+[2026-04-24 02:22:19,286][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X4']
+[2026-04-24 02:22:19,286][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,287][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:19,287][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,287][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,287][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,287][dowhy.causal_estimator][INFO] - b: X4~X3
+[2026-04-24 02:22:19,294][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X5']
+[2026-04-24 02:22:19,295][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,296][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:19,296][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X4']
+[2026-04-24 02:22:19,297][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,298][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,299][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,299][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,299][dowhy.causal_estimator][INFO] - b: X5~X3+X3*X2
+[2026-04-24 02:22:19,353][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X0']
+[2026-04-24 02:22:19,353][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,353][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,353][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,353][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X0'].
+[2026-04-24 02:22:19,354][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X1']
+[2026-04-24 02:22:19,354][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,355][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,355][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,355][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X1'].
+[2026-04-24 02:22:19,356][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X2']
+[2026-04-24 02:22:19,356][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,356][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,356][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,356][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X2'].
+[2026-04-24 02:22:19,358][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X3']
+[2026-04-24 02:22:19,358][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,358][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,358][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,358][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X3'].
+[2026-04-24 02:22:19,360][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X5']
+[2026-04-24 02:22:19,361][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,361][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,362][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,362][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,362][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,362][dowhy.causal_estimator][INFO] - b: X5~X4+X4*X2
+[2026-04-24 02:22:19,411][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X0']
+[2026-04-24 02:22:19,411][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,411][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,411][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,411][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X0'].
+[2026-04-24 02:22:19,413][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X1']
+[2026-04-24 02:22:19,413][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,413][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,413][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,413][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X1'].
+[2026-04-24 02:22:19,415][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X2']
+[2026-04-24 02:22:19,415][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,415][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,415][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,415][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X2'].
+[2026-04-24 02:22:19,416][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X3']
+[2026-04-24 02:22:19,417][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,417][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,417][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,417][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X3'].
+[2026-04-24 02:22:19,418][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X4']
+[2026-04-24 02:22:19,418][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,418][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,419][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,419][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X4'].
+[2026-04-24 02:22:19,494][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X1']
+[2026-04-24 02:22:19,494][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,494][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,495][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,495][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X1'].
+[2026-04-24 02:22:19,496][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X2']
+[2026-04-24 02:22:19,496][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,497][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,497][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,497][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X2'].
+[2026-04-24 02:22:19,499][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X3']
+[2026-04-24 02:22:19,499][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,500][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,500][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,500][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,500][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,500][dowhy.causal_estimator][INFO] - b: X3~X0+X0*X1
+[2026-04-24 02:22:19,509][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X4']
+[2026-04-24 02:22:19,509][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,510][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,510][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,511][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,512][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,512][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,512][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,513][dowhy.causal_estimator][INFO] - b: X4~X0+X0*X1
+[2026-04-24 02:22:19,521][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X5']
+[2026-04-24 02:22:19,522][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,523][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,523][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:19,524][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,525][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,525][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,525][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,525][dowhy.causal_estimator][INFO] - b: X5~X0+X0*X1+X0*X2
+[2026-04-24 02:22:19,579][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X0']
+[2026-04-24 02:22:19,579][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,579][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,579][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,579][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X0'].
+[2026-04-24 02:22:19,581][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X2']
+[2026-04-24 02:22:19,581][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,581][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,581][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,581][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X2'].
+[2026-04-24 02:22:19,583][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X3']
+[2026-04-24 02:22:19,583][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,584][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,584][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,584][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,584][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,584][dowhy.causal_estimator][INFO] - b: X3~X1+X1*X0
+[2026-04-24 02:22:19,592][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X4']
+[2026-04-24 02:22:19,592][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,592][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,593][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,593][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,594][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,595][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,595][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,595][dowhy.causal_estimator][INFO] - b: X4~X1+X1*X0
+[2026-04-24 02:22:19,602][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X5']
+[2026-04-24 02:22:19,603][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,603][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,604][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:19,604][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,605][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,606][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,606][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,606][dowhy.causal_estimator][INFO] - b: X5~X1+X1*X0+X1*X2
+[2026-04-24 02:22:19,661][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X0']
+[2026-04-24 02:22:19,661][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,661][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,661][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,661][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X0'].
+[2026-04-24 02:22:19,663][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X1']
+[2026-04-24 02:22:19,663][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,663][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,663][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,663][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X1'].
+[2026-04-24 02:22:19,665][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X3']
+[2026-04-24 02:22:19,665][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,665][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,665][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,665][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X3'].
+[2026-04-24 02:22:19,666][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X4']
+[2026-04-24 02:22:19,667][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,667][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,667][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,667][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X4'].
+[2026-04-24 02:22:19,668][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X5']
+[2026-04-24 02:22:19,669][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,670][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,670][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,670][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,670][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,670][dowhy.causal_estimator][INFO] - b: X5~X2+X2*X3+X2*X0+X2*X1+X2*X4
+[2026-04-24 02:22:19,728][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X0']
+[2026-04-24 02:22:19,728][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,728][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,728][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,728][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X0'].
+[2026-04-24 02:22:19,730][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X1']
+[2026-04-24 02:22:19,730][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,730][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,730][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,730][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X1'].
+[2026-04-24 02:22:19,732][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X2']
+[2026-04-24 02:22:19,732][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,732][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,732][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,732][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X2'].
+[2026-04-24 02:22:19,734][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X4']
+[2026-04-24 02:22:19,734][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,735][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:19,735][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,735][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,735][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,735][dowhy.causal_estimator][INFO] - b: X4~X3
+[2026-04-24 02:22:19,742][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X5']
+[2026-04-24 02:22:19,743][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,743][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:19,744][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X4']
+[2026-04-24 02:22:19,745][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,746][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,746][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,747][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,747][dowhy.causal_estimator][INFO] - b: X5~X3+X3*X2
+[2026-04-24 02:22:19,796][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X0']
+[2026-04-24 02:22:19,796][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,797][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,797][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,797][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X0'].
+[2026-04-24 02:22:19,798][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X1']
+[2026-04-24 02:22:19,798][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,798][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,798][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,798][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X1'].
+[2026-04-24 02:22:19,800][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X2']
+[2026-04-24 02:22:19,800][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,800][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,800][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,800][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X2'].
+[2026-04-24 02:22:19,802][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X3']
+[2026-04-24 02:22:19,802][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,802][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,802][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,802][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X3'].
+[2026-04-24 02:22:19,804][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X5']
+[2026-04-24 02:22:19,805][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,805][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,805][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,806][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,806][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,806][dowhy.causal_estimator][INFO] - b: X5~X4+X4*X2
+[2026-04-24 02:22:19,857][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X0']
+[2026-04-24 02:22:19,857][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,857][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,857][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,857][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X0'].
+[2026-04-24 02:22:19,858][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X1']
+[2026-04-24 02:22:19,858][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,858][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,858][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,858][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X1'].
+[2026-04-24 02:22:19,860][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X2']
+[2026-04-24 02:22:19,860][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,860][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,860][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,860][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X2'].
+[2026-04-24 02:22:19,862][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X3']
+[2026-04-24 02:22:19,862][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,862][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,862][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,862][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X3'].
+[2026-04-24 02:22:19,863][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X4']
+[2026-04-24 02:22:19,863][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,863][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,864][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,864][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X4'].
+[2026-04-24 02:22:19,933][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X1']
+[2026-04-24 02:22:19,933][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,933][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,933][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,933][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X1'].
+[2026-04-24 02:22:19,935][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X2']
+[2026-04-24 02:22:19,935][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:19,935][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,935][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,935][dowhy.causal_estimator][WARNING] - No directed path from ['X0'] to ['X2'].
+[2026-04-24 02:22:19,937][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X3']
+[2026-04-24 02:22:19,938][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,938][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,938][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:19,938][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,938][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,939][dowhy.causal_estimator][INFO] - b: X3~X0+X0*X1
+[2026-04-24 02:22:19,947][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X4']
+[2026-04-24 02:22:19,948][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,948][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,949][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:19,949][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,950][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,951][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,951][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,951][dowhy.causal_estimator][INFO] - b: X4~X0+X0*X1
+[2026-04-24 02:22:19,959][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X0'] on outcome ['X5']
+[2026-04-24 02:22:19,960][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,961][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:19,961][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:19,962][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,963][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:19,963][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:19,963][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:19,964][dowhy.causal_estimator][INFO] - b: X5~X0+X0*X1+X0*X2
+[2026-04-24 02:22:20,017][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X0']
+[2026-04-24 02:22:20,017][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,017][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,017][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,017][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X0'].
+[2026-04-24 02:22:20,019][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X2']
+[2026-04-24 02:22:20,019][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,019][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,019][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,019][dowhy.causal_estimator][WARNING] - No directed path from ['X1'] to ['X2'].
+[2026-04-24 02:22:20,021][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X3']
+[2026-04-24 02:22:20,021][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,022][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:20,022][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:20,022][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,022][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,022][dowhy.causal_estimator][INFO] - b: X3~X1+X1*X0
+[2026-04-24 02:22:20,030][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X4']
+[2026-04-24 02:22:20,030][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,030][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:20,031][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3']
+[2026-04-24 02:22:20,031][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,032][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,033][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,033][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,033][dowhy.causal_estimator][INFO] - b: X4~X1+X1*X0
+[2026-04-24 02:22:20,040][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X1'] on outcome ['X5']
+[2026-04-24 02:22:20,041][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,041][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:20,042][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X3', 'X4']
+[2026-04-24 02:22:20,042][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,043][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,044][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,044][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,044][dowhy.causal_estimator][INFO] - b: X5~X1+X1*X0+X1*X2
+[2026-04-24 02:22:20,098][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X0']
+[2026-04-24 02:22:20,098][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,099][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,099][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,099][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X0'].
+[2026-04-24 02:22:20,100][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X1']
+[2026-04-24 02:22:20,100][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,101][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,101][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,101][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X1'].
+[2026-04-24 02:22:20,102][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X3']
+[2026-04-24 02:22:20,102][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,102][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,102][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,102][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X3'].
+[2026-04-24 02:22:20,104][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X4']
+[2026-04-24 02:22:20,104][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,104][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,104][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,104][dowhy.causal_estimator][WARNING] - No directed path from ['X2'] to ['X4'].
+[2026-04-24 02:22:20,106][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X2'] on outcome ['X5']
+[2026-04-24 02:22:20,107][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,108][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:[]
+[2026-04-24 02:22:20,108][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:20,108][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,108][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,108][dowhy.causal_estimator][INFO] - b: X5~X2+X2*X3+X2*X0+X2*X1+X2*X4
+[2026-04-24 02:22:20,166][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X0']
+[2026-04-24 02:22:20,166][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,166][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,166][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,166][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X0'].
+[2026-04-24 02:22:20,168][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X1']
+[2026-04-24 02:22:20,168][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,168][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,168][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,168][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X1'].
+[2026-04-24 02:22:20,170][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X2']
+[2026-04-24 02:22:20,170][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,170][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,170][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,170][dowhy.causal_estimator][WARNING] - No directed path from ['X3'] to ['X2'].
+[2026-04-24 02:22:20,172][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X4']
+[2026-04-24 02:22:20,172][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,173][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:20,173][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:20,173][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,173][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,173][dowhy.causal_estimator][INFO] - b: X4~X3
+[2026-04-24 02:22:20,181][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X3'] on outcome ['X5']
+[2026-04-24 02:22:20,181][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,182][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X1', 'X0']
+[2026-04-24 02:22:20,183][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:['X4']
+[2026-04-24 02:22:20,183][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,185][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,185][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,185][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,186][dowhy.causal_estimator][INFO] - b: X5~X3+X3*X2
+[2026-04-24 02:22:20,239][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X0']
+[2026-04-24 02:22:20,239][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,239][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,239][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,239][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X0'].
+[2026-04-24 02:22:20,241][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X1']
+[2026-04-24 02:22:20,241][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,241][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,241][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,241][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X1'].
+[2026-04-24 02:22:20,243][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X2']
+[2026-04-24 02:22:20,243][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,243][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,243][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,243][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X2'].
+[2026-04-24 02:22:20,244][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X3']
+[2026-04-24 02:22:20,245][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,245][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,245][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,245][dowhy.causal_estimator][WARNING] - No directed path from ['X4'] to ['X3'].
+[2026-04-24 02:22:20,246][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X4'] on outcome ['X5']
+[2026-04-24 02:22:20,247][dowhy.causal_identifier.auto_identifier][INFO] - Causal effect can be identified.
+[2026-04-24 02:22:20,248][dowhy.causal_identifier.auto_identifier][INFO] - Instrumental variables for treatment and outcome:['X3']
+[2026-04-24 02:22:20,248][dowhy.causal_identifier.auto_identifier][INFO] - Frontdoor variables for treatment and outcome:[]
+[2026-04-24 02:22:20,248][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,248][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,249][dowhy.causal_estimator][INFO] - b: X5~X4+X4*X2
+[2026-04-24 02:22:20,297][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X0']
+[2026-04-24 02:22:20,297][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,298][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,298][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,298][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X0'].
+[2026-04-24 02:22:20,299][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X1']
+[2026-04-24 02:22:20,299][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,299][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,299][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,299][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X1'].
+[2026-04-24 02:22:20,301][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X2']
+[2026-04-24 02:22:20,301][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,301][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,301][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,301][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X2'].
+[2026-04-24 02:22:20,303][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X3']
+[2026-04-24 02:22:20,303][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,303][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,303][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,303][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X3'].
+[2026-04-24 02:22:20,305][dowhy.causal_model][INFO] - Model to find the causal effect of treatment ['X5'] on outcome ['X4']
+[2026-04-24 02:22:20,305][dowhy.causal_identifier.auto_identifier][WARNING] - No directed path from treatment to outcome. Causal Effect is zero.
+[2026-04-24 02:22:20,305][dowhy.causal_model][INFO] - linear_regression
+[2026-04-24 02:22:20,305][dowhy.causal_estimator][INFO] - INFO: Using Linear Regression Estimator
+[2026-04-24 02:22:20,305][dowhy.causal_estimator][WARNING] - No directed path from ['X5'] to ['X4'].
