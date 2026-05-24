@@ -1,0 +1,24 @@
+{
+  "fold": 2,
+  "dataset": {
+    "name": "ElectricalCircuitData",
+    "target": "data.ElectricalCircuitData.ElectricalCircuitData"
+  },
+  "model": {
+    "name": "MLPModel",
+    "target": "models.MLPModel.MLPModel"
+  },
+  "ci_test": {
+    "name": "CondIndepKCI",
+    "target": "experiment_utils.ci_tests.CondIndepKCI",
+    "threshold": 0.01
+  },
+  "sample_size": 150,
+  "baseline_sample_size": 150,
+  "alignment": {
+    "enabled": false,
+    "used_for_causaldiscovery": false,
+    "status": "raw",
+    "target_mode": null
+  }
+}
