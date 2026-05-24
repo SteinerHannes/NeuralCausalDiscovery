@@ -1,0 +1,139 @@
+=== [Causal Discovery] Fold 1 (1/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/metadata.json
+CI(0, 1 | ()) p=0.01351 -> indep=True
+CI(0, 2 | ()) p=0.4585 -> indep=True
+CI(1, 2 | ()) p=0.1427 -> indep=True
+CI(0, 3 | ()) p=9.025e-08 -> indep=False
+CI(1, 3 | ()) p=1.316e-09 -> indep=False
+CI(2, 3 | ()) p=0.03096 -> indep=True
+CI(0, 4 | ()) p=0.9471 -> indep=True
+CI(1, 4 | ()) p=0.005068 -> indep=False
+CI(2, 4 | ()) p=0.1711 -> indep=True
+CI(3, 4 | ()) p=0.002308 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=8.007e-10 -> indep=False
+CI(2, 5 | ()) p=0.1203 -> indep=True
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0.02143 -> indep=True
+CI(0, 6 | ()) p=0.02759 -> indep=True
+CI(1, 6 | ()) p=0 -> indep=False
+CI(2, 6 | ()) p=0.0446 -> indep=True
+CI(3, 6 | ()) p=4.393e-11 -> indep=False
+CI(4, 6 | ()) p=0 -> indep=False
+CI(5, 6 | ()) p=4.521e-08 -> indep=False
+CI(0, 7 | ()) p=0.1613 -> indep=True
+CI(1, 7 | ()) p=0.009484 -> indep=False
+CI(2, 7 | ()) p=0 -> indep=False
+CI(3, 7 | ()) p=0.03976 -> indep=True
+CI(4, 7 | ()) p=0.01867 -> indep=True
+CI(5, 7 | ()) p=0.02199 -> indep=True
+CI(6, 7 | ()) p=0.009416 -> indep=False
+CI(0, 3 | (1,)) p=2.187e-06 -> indep=False
+CI(1, 3 | (0,)) p=1.082e-08 -> indep=False
+CI(1, 4 | (3,)) p=0.2653 -> indep=True
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=3.169e-11 -> indep=False
+CI(1, 5 | (0,)) p=9.79e-08 -> indep=False
+CI(1, 5 | (3,)) p=0.222 -> indep=True
+CI(3, 5 | (0,)) p=0 -> indep=False
+CI(1, 6 | (3,)) p=0 -> indep=False
+CI(1, 6 | (4,)) p=0 -> indep=False
+CI(1, 6 | (5,)) p=0 -> indep=False
+CI(3, 6 | (1,)) p=0.001461 -> indep=False
+CI(3, 6 | (4,)) p=1.707e-06 -> indep=False
+CI(3, 6 | (5,)) p=0.003757 -> indep=False
+CI(4, 6 | (1,)) p=0 -> indep=False
+CI(4, 6 | (3,)) p=2.665e-15 -> indep=False
+CI(4, 6 | (5,)) p=1.11e-16 -> indep=False
+CI(5, 6 | (1,)) p=0.04631 -> indep=True
+CI(1, 7 | (2,)) p=0.001977 -> indep=False
+CI(1, 7 | (6,)) p=0.1867 -> indep=True
+CI(2, 7 | (6,)) p=0 -> indep=False
+CI(6, 7 | (2,)) p=7.994e-09 -> indep=False
+CI(3, 6 | (1, 4)) p=0.2134 -> indep=True
+Saved adjacency matrix to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.7173 -> indep=True
+CI(0, 2 | ()) p=0.6221 -> indep=True
+CI(1, 2 | ()) p=0.5198 -> indep=True
+CI(0, 3 | ()) p=4.213e-10 -> indep=False
+CI(1, 3 | ()) p=0.4679 -> indep=True
+CI(2, 3 | ()) p=0.001267 -> indep=False
+CI(0, 4 | ()) p=0.2953 -> indep=True
+CI(1, 4 | ()) p=0.000706 -> indep=False
+CI(2, 4 | ()) p=0.6097 -> indep=True
+CI(3, 4 | ()) p=0.0024 -> indep=False
+CI(0, 5 | ()) p=0.0007803 -> indep=False
+CI(1, 5 | ()) p=0.4059 -> indep=True
+CI(2, 5 | ()) p=0.1246 -> indep=True
+CI(3, 5 | ()) p=2.119e-08 -> indep=False
+CI(4, 5 | ()) p=0.04946 -> indep=True
+CI(0, 6 | ()) p=0.08 -> indep=True
+CI(1, 6 | ()) p=0 -> indep=False
+CI(2, 6 | ()) p=0.3792 -> indep=True
+CI(3, 6 | ()) p=0.02545 -> indep=True
+CI(4, 6 | ()) p=6.903e-10 -> indep=False
+CI(5, 6 | ()) p=0.07385 -> indep=True
+CI(0, 7 | ()) p=0.725 -> indep=True
+CI(1, 7 | ()) p=0.5932 -> indep=True
+CI(2, 7 | ()) p=0.0001931 -> indep=False
+CI(3, 7 | ()) p=0.7002 -> indep=True
+CI(4, 7 | ()) p=0.05761 -> indep=True
+CI(5, 7 | ()) p=0.6871 -> indep=True
+CI(6, 7 | ()) p=0.2421 -> indep=True
+CI(0, 3 | (2,)) p=1.149e-12 -> indep=False
+CI(2, 3 | (0,)) p=0.003546 -> indep=False
+CI(1, 4 | (3,)) p=0.00771 -> indep=False
+CI(3, 4 | (1,)) p=0.000123 -> indep=False
+CI(0, 5 | (3,)) p=0.2738 -> indep=True
+CI(1, 6 | (4,)) p=5.551e-15 -> indep=False
+CI(4, 6 | (1,)) p=7.456e-07 -> indep=False
+Saved metrics to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/performance_metrics.json
+Saved baseline metrics to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/pag_vs_pag_metrics.json
+Found 5 differences:
+  1. Missing: 1 --- 4 (DAG: directed_ij)
+  2. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 3 --- 5 (DAG: directed_ij, PAG: bidirected)
+  4. Missing: 4 --- 7 (DAG: directed_ij)
+  5. Extra: 6 --- 7 (PAG: bidirected)
+Found 5 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 5 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  4. Partial orientation: 1 --- 6 (DAG: directed_ij, PAG: partial_ij)
+  5. Partial orientation: 2 --- 7 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/edge_comparison.txt
+Found 8 differences:
+  1. Missing: 0 --- 5 (DAG: directed_ij)
+  2. Missing: 1 --- 3 (DAG: directed_ij)
+  3. Extra: 2 --- 3 (PAG: bidirected)
+  4. Wrong orientation: 2 --- 7 (DAG: directed_ij, PAG: bidirected)
+  5. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  6. Wrong orientation: 3 --- 5 (DAG: directed_ij, PAG: bidirected)
+  7. Wrong orientation: 4 --- 6 (DAG: directed_ij, PAG: bidirected)
+  8. Missing: 4 --- 7 (DAG: directed_ij)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 4 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 1 --- 6 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/edge_comparison_baseline.txt
+Found 6 differences:
+  1. Extra: 0 --- 5 (PAG: partial_ij)
+  2. Extra: 1 --- 3 (PAG: partial_ij)
+  3. Missing: 1 --- 4 (Reference PAG: partial_ij)
+  4. Missing: 2 --- 3 (Reference PAG: bidirected)
+  5. Wrong orientation: 4 --- 6 (Reference PAG: bidirected, PAG: directed_ij)
+  6. Extra: 6 --- 7 (PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 2 --- 7 (Reference PAG: bidirected, PAG: partial_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/layered_sparse_nonlinear_sem_nodes_8_shallow_mlp_align/1/baseline_graph_adj.npy
