@@ -1,0 +1,41 @@
+{
+  "control_mode": "epochs",
+  "configured_epochs": 60,
+  "target_updates": null,
+  "batch_size": 512,
+  "batches_per_epoch": 16,
+  "effective_epochs": 60,
+  "effective_updates": 960,
+  "planned_epochs": 60,
+  "planned_updates": 960,
+  "model_name": "BottleneckMLP",
+  "dataset_name": "ElectricalCircuitData",
+  "profile_name": "deep",
+  "num_parameters": 5139,
+  "early_stopping": {
+    "enabled": true,
+    "min_epochs": 15,
+    "patience": 8,
+    "min_delta": 0.0001,
+    "restore_best_weights": true
+  },
+  "optimizer_settings": {
+    "_target_": "torch.optim.AdamW",
+    "lr": 0.0008,
+    "weight_decay": 0.001
+  },
+  "scheduler_settings": {
+    "_target_": "torch.optim.lr_scheduler.StepLR",
+    "gamma": 0.85,
+    "step_size": 12
+  },
+  "optimizer_override_skipped_keys": [],
+  "scheduler_override_skipped_keys": [],
+  "actual_epochs": 60,
+  "actual_updates": 960,
+  "best_epoch": 60,
+  "best_val_loss": 0.06509500741958618,
+  "stop_reason": "max_epochs",
+  "early_stopping_triggered": false,
+  "seed": 3
+}
