@@ -1,0 +1,107 @@
+=== [Causal Discovery] Fold 2 (2/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/linear_sem_shallow_mlp_no_align/2/extraction_results.csv
+Warning: 3 constant columns detected; added tiny noise for correlation stability.
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/linear_sem_shallow_mlp_no_align/2/metadata.json
+Warning: 1 constant columns detected; added tiny noise for correlation stability.
+Test:  CI( 0 , 1 | () ) = 0.0
+Test:  CI( 0 , 2 | () ) = 0.7446963193445892
+Test:  CI( 1 , 2 | () ) = 0.6012212019777576
+Test:  CI( 0 , 3 | () ) = 3.228528555609955e-13
+Test:  CI( 1 , 3 | () ) = 0.12530731957937613
+Test:  CI( 2 , 3 | () ) = 6.73283709475836e-05
+Test:  CI( 0 , 4 | () ) = 0.0
+Test:  CI( 1 , 4 | () ) = 0.0
+Test:  CI( 2 , 4 | () ) = 2.220446049250313e-15
+Test:  CI( 3 , 4 | () ) = 0.0
+Test:  CI( 0 , 5 | () ) = 9.519718346950867e-12
+Test:  CI( 1 , 5 | () ) = 0.22478488271335628
+Test:  CI( 2 , 5 | () ) = 1.1058531868002319e-10
+Test:  CI( 3 , 5 | () ) = 0.001141707900219835
+Test:  CI( 4 , 5 | () ) = 4.619615801004784e-11
+Test:  CI( 0 , 3 | (2,) ) = 2.6645352591003757e-14
+Test:  CI( 2 , 3 | (0,) ) = 5.475570448831846e-06
+Test:  CI( 0 , 4 | (1,) ) = 3.774758283725532e-15
+Test:  CI( 0 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.0
+Test:  CI( 1 , 4 | (0,) ) = 0.03656688904277061
+Test:  CI( 2 , 4 | (0,) ) = 0.0
+Test:  CI( 2 , 4 | (3,) ) = 7.671641100159832e-12
+Test:  CI( 3 , 4 | (0,) ) = 1.022732343258781e-09
+Test:  CI( 3 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 5 | (2,) ) = 6.217248937900877e-15
+Test:  CI( 0 , 5 | (3,) ) = 3.6105414213949416e-09
+Test:  CI( 0 , 5 | (4,) ) = 0.003858619050955525
+Test:  CI( 2 , 5 | (0,) ) = 7.638334409421077e-14
+Test:  CI( 2 , 5 | (3,) ) = 1.0335326372512554e-08
+Test:  CI( 2 , 5 | (4,) ) = 0.00039976219099568944
+Test:  CI( 3 , 5 | (0,) ) = 0.8436474805736995
+Test:  CI( 4 , 5 | (0,) ) = 0.0188877395606859
+Saved adjacency matrix to outputs/experiments/linear_sem_shallow_mlp_no_align/2/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 1.2261303083960229e-12
+Test:  CI( 0 , 2 | () ) = 0.3460200755034273
+Test:  CI( 1 , 2 | () ) = 0.9782381479073041
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 9.802187950214147e-10
+Test:  CI( 2 , 3 | () ) = 0.20182948031662407
+Test:  CI( 0 , 4 | () ) = 0.8508821104662925
+Test:  CI( 1 , 4 | () ) = 0.39407655006914877
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.0008270142521740187
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.6134509458946216
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.021049751975289466
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.8322374504152816
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.001144248098677858
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.0378241679921858
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Saved metrics to outputs/experiments/linear_sem_shallow_mlp_no_align/2/performance_metrics.json
+Saved baseline metrics to outputs/experiments/linear_sem_shallow_mlp_no_align/2/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/linear_sem_shallow_mlp_no_align/2/pag_vs_pag_metrics.json
+Found 9 differences:
+  1. Wrong orientation: 0 --- 1 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 0 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Extra: 0 --- 5 (PAG: bidirected)
+  4. Missing: 1 --- 5 (DAG: directed_ij)
+  5. Extra: 2 --- 3 (PAG: bidirected)
+  6. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  7. Extra: 2 --- 5 (PAG: bidirected)
+  8. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  9. Missing: 3 --- 5 (DAG: directed_ij)
+Saved edge comparison details to outputs/experiments/linear_sem_shallow_mlp_no_align/2/edge_comparison.txt
+Found 4 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  4. Wrong orientation: 3 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/linear_sem_shallow_mlp_no_align/2/edge_comparison_baseline.txt
+Found 6 differences:
+  1. Extra: 0 --- 4 (PAG: directed_ij)
+  2. Extra: 0 --- 5 (PAG: bidirected)
+  3. Missing: 1 --- 5 (Reference PAG: bidirected)
+  4. Extra: 2 --- 3 (PAG: bidirected)
+  5. Extra: 2 --- 5 (PAG: bidirected)
+  6. Missing: 3 --- 5 (Reference PAG: bidirected)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (Reference PAG: partial_ij, PAG: bidirected)
+  2. Partial orientation: 0 --- 3 (Reference PAG: partial_ij, PAG: bidirected)
+  3. Partial orientation: 2 --- 4 (Reference PAG: partial_ij, PAG: bidirected)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/linear_sem_shallow_mlp_no_align/2/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/linear_sem_shallow_mlp_no_align/2/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/linear_sem_shallow_mlp_no_align/2/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/linear_sem_shallow_mlp_no_align/2/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/linear_sem_shallow_mlp_no_align/2/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/linear_sem_shallow_mlp_no_align/2/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/linear_sem_shallow_mlp_no_align/2/baseline_graph_adj.npy
