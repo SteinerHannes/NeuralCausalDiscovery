@@ -1,0 +1,85 @@
+=== [Causal Discovery] Fold 2 (2/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_200__baseline_200
+Saved metadata to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/metadata.json
+CI(0, 1 | ()) p=0.6711 -> indep=True
+CI(0, 2 | ()) p=0.3971 -> indep=True
+CI(1, 2 | ()) p=0.6698 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=0 -> indep=False
+CI(2, 3 | ()) p=0.6277 -> indep=True
+CI(0, 4 | ()) p=0 -> indep=False
+CI(1, 4 | ()) p=0 -> indep=False
+CI(2, 4 | ()) p=0.7113 -> indep=True
+CI(3, 4 | ()) p=0 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=3.679e-13 -> indep=False
+CI(2, 5 | ()) p=2.82e-05 -> indep=False
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=0 -> indep=False
+CI(0, 4 | (1,)) p=0 -> indep=False
+CI(0, 4 | (3,)) p=0.1589 -> indep=True
+CI(1, 4 | (3,)) p=0.0423 -> indep=True
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (2,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=0.7272 -> indep=True
+CI(1, 5 | (2,)) p=2.22e-16 -> indep=False
+CI(1, 5 | (3,)) p=0.2544 -> indep=True
+CI(2, 5 | (3,)) p=0 -> indep=False
+CI(2, 5 | (4,)) p=0 -> indep=False
+CI(3, 5 | (2,)) p=0 -> indep=False
+CI(3, 5 | (4,)) p=0.04789 -> indep=True
+CI(4, 5 | (2,)) p=0 -> indep=False
+Saved adjacency matrix to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.6143 -> indep=True
+CI(0, 2 | ()) p=0.2534 -> indep=True
+CI(1, 2 | ()) p=0.2109 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=0 -> indep=False
+CI(2, 3 | ()) p=0.5623 -> indep=True
+CI(0, 4 | ()) p=0 -> indep=False
+CI(1, 4 | ()) p=8.608e-13 -> indep=False
+CI(2, 4 | ()) p=0.07516 -> indep=True
+CI(3, 4 | ()) p=0 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=1.672e-10 -> indep=False
+CI(2, 5 | ()) p=0.2255 -> indep=True
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=0 -> indep=False
+CI(0, 4 | (1,)) p=0 -> indep=False
+CI(0, 4 | (3,)) p=0.4715 -> indep=True
+CI(1, 4 | (3,)) p=0.7738 -> indep=True
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=0.3945 -> indep=True
+CI(1, 5 | (3,)) p=0.4393 -> indep=True
+CI(3, 5 | (4,)) p=0.02805 -> indep=True
+Saved metrics to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/performance_metrics.json
+Saved baseline metrics to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/pag_vs_pag_metrics.json
+No differences found - graphs match perfectly!
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 5 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/edge_comparison.txt
+Found 1 differences:
+  1. Missing: 2 --- 5 (DAG: directed_ij)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/edge_comparison_baseline.txt
+Found 1 differences:
+  1. Extra: 2 --- 5 (PAG: partial_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/electrical_circuit_sample_200_shallow_mlp_align_observable_state/2/baseline_graph_adj.npy
