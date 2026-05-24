@@ -1,0 +1,15 @@
+_target_: data.TemplatedLinearSEMDataset.TemplatedLinearSEMDataset
+seed: 1
+topology: layered_sparse
+num_nodes: 6
+input_size: 3
+output_size: 3
+num_samples: 10000  # train/val/test pool size
+min_edge_weight: 0.5
+max_edge_weight: 1.5
+noise_distribution: gaussian
+noise_scale: 1.0
+train_ratio: 0.80
+val_ratio: 0.10
+test_ratio: 0.10
+extract_samples: 1000  # extraction samples added on top

@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: ChainNonlinearSEM
+  - override /model: ShallowMLP
+  - override /causaldiscovery/ci_test: CondIndepKCI
+  - _self_
+
+experiment:
+  name: chain_nonlinear_sem_shallow_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

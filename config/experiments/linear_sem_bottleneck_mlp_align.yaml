@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LinearSEMDataset
+  - override /model: BottleneckMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: linear_sem_bottleneck_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

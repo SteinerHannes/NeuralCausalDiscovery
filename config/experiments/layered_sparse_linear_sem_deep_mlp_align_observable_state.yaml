@@ -1,0 +1,35 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LayeredSparseLinearSEM
+  - override /model: DeepMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: layered_sparse_linear_sem_deep_mlp_align_observable_state
+
+extraction:
+  alignment:
+    enabled: true
+    target_mode: observable_state
+
+intervention:
+  model_level:
+    prediction_source: aligned_observable_state
+
+pipeline:
+  run_train: false
+  run_test: false
+  run_extraction: true
+  run_causaldiscovery: true
+  run_pag_cleanup: true
+  run_interventions: true
+
+reuse:
+  enabled: true
+  source_experiment: layered_sparse_linear_sem_deep_mlp_align
+  mode: symlink
+  manifest_file: reuse_manifest.json
+  required_fold_files:
+    - model.pt

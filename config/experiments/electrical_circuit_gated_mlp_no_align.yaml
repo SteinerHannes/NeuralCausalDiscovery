@@ -1,0 +1,30 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: ElectricalCircuitData
+  - override /model: GatedMLP
+  - override /causaldiscovery/ci_test: CondIndepKCI
+  - _self_
+
+experiment:
+  name: electrical_circuit_gated_mlp_no_align
+
+extraction:
+  alignment:
+    enabled: false
+
+pipeline:
+  run_train: false
+  run_test: false
+  run_extraction: true
+  run_causaldiscovery: true
+  run_pag_cleanup: true
+  run_interventions: true
+
+reuse:
+  enabled: true
+  source_experiment: electrical_circuit_gated_mlp_align
+  mode: symlink
+  manifest_file: reuse_manifest.json
+  required_fold_files:
+    - model.pt

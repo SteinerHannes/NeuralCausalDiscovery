@@ -1,0 +1,5 @@
+_target_: causal_discovery_utils.cond_indep_tests.CondIndepParCorr  # Linear/Gaussian CI test
+threshold: 0.01  # p-value cutoff: smaller => fewer independences (denser graphs)
+count_tests: false  # track number of CI tests per conditioning-set size (debug/analysis)
+use_cache: false  # cache repeated CI tests (useful for sweeps; extra memory)
+verbose: true  # print CI test outcomes

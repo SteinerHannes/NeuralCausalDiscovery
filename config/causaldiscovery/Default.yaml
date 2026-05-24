@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - ci_test: CondIndepKCI
+
+mode: model_level  # model_level | data_level
+columns_mode: all  # all | inputs_outputs
+include_prefixes: []  # e.g. ["act_", "input_", "output_", "sem_"]
+exclude_prefixes: []  # e.g. ["param_"]
+max_features: null  # int or null
+selection_strategy: first  # first | random
+max_samples: 150  # limit samples used for CI testing on extracted data; null to use all
+sample_sizes: null  # list[int] or null to use max_samples
+baseline_max_samples: ${causaldiscovery.max_samples}  # default to same cap as extracted data
+baseline_sample_sizes: null  # list[int] or null to use baseline_max_samples
+sample_strategy: first  # first | random (for max_samples/baseline_max_samples)

@@ -1,0 +1,16 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LinearSEMDataset_nodes_9
+  - override /model: ShallowMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: linear_sem_nodes_9_shallow_mlp_align
+  metadata:
+    appendix_only: true
+
+extraction:
+  alignment:
+    enabled: true

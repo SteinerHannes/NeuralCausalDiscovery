@@ -1,0 +1,35 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LinearSEMDataset
+  - override /model: ShallowMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: linear_sem_weights_shallow_mlp_align
+  metadata:
+    exploratory: true
+    confirmatory: false
+    appendix_only: true
+extraction:
+  method: weights
+  weights_repeat: true
+  alignment:
+    enabled: true
+
+pipeline:
+  run_train: false
+  run_test: false
+  run_extraction: true
+  run_causaldiscovery: true
+  run_pag_cleanup: true
+  run_interventions: true
+
+reuse:
+  enabled: true
+  source_experiment: linear_sem_shallow_mlp_align
+  mode: symlink
+  manifest_file: reuse_manifest.json
+  required_fold_files:
+    - model.pt

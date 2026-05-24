@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: ElectricalCircuitData
+  - override /model: BottleneckMLP
+  - override /causaldiscovery/ci_test: CondIndepKCI
+  - _self_
+
+experiment:
+  name: electrical_circuit_bottleneck_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

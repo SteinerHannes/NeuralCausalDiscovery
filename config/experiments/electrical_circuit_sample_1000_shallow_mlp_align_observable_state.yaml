@@ -1,0 +1,39 @@
+# @package _global_
+defaults:
+- _base
+- override /data: ElectricalCircuitData
+- override /model: ShallowMLP
+- override /causaldiscovery/ci_test: CondIndepKCI
+- _self_
+experiment:
+  name: electrical_circuit_sample_1000_shallow_mlp_align_observable_state
+extraction:
+  alignment:
+    enabled: true
+    target_mode: observable_state
+causaldiscovery:
+  max_samples: 1000
+  baseline_max_samples: 1000
+  sample_sizes: null
+  baseline_sample_sizes: null
+pipeline:
+  run_train: false
+  run_test: false
+  run_extraction: false
+  run_causaldiscovery: true
+  run_pag_cleanup: true
+  run_interventions: true
+reuse:
+  enabled: true
+  source_experiment: electrical_circuit_shallow_mlp_align_observable_state
+  mode: symlink
+  manifest_file: reuse_manifest.json
+  required_fold_files:
+  - model.pt
+  - extraction_results.csv
+  - alignment_results.csv
+  - alignment_mapping.npz
+  - alignment_metrics.json
+intervention:
+  model_level:
+    prediction_source: aligned_observable_state

@@ -1,0 +1,15 @@
+_target_: data.TemplatedNonlinearAdditiveSEMDataset.TemplatedNonlinearAdditiveSEMDataset
+seed: 1
+topology: layered_sparse
+num_nodes: 6
+input_size: 3
+output_size: 3
+num_samples: 10000  # train/val/test pool size
+mechanism_family: mixed
+min_edge_weight: 0.3
+max_edge_weight: 0.9
+noise_scale: 1.0
+train_ratio: 0.80
+val_ratio: 0.10
+test_ratio: 0.10
+extract_samples: 1000  # extraction samples added on top

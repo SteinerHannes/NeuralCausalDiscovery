@@ -1,0 +1,18 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: ElectricalCircuitData
+  - override /model: ShallowMLP
+  - override /causaldiscovery/ci_test: CondIndepKCI
+  - _self_
+
+experiment:
+  name: electrical_circuit_io_4_2_shallow_mlp_align
+
+extraction:
+  alignment:
+    enabled: true
+
+data:
+  input_size: 4
+  output_size: 2

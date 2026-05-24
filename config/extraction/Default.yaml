@@ -1,0 +1,33 @@
+output_file: extraction_results.csv
+batch_size: 256
+num_workers: 2
+persistent_workers: true
+prefetch_factor: 2
+method: activations
+include_inputs: true
+include_outputs: true
+flatten: true
+layer_types: null
+prefix: null
+grad_target: sum
+weights_repeat: false
+weights_include_bias: true
+alignment:
+  enabled: true
+  fit_subset: val
+  output_file: alignment_results.csv
+  metrics_file: alignment_metrics.json
+  mapping_file: alignment_mapping.npz
+  save_mapping: true
+  target_mode: sem_truth  # sem_truth | observable_state
+  use_aligned_for_causaldiscovery: true
+  columns_mode: all  # all | inputs_outputs
+  include_prefixes: []
+  exclude_prefixes: [input_, output_]
+  max_features: null
+  selection_strategy: first  # first | random
+  standardize_features: true
+  standardize_targets: true
+  ridge_alpha: 1e-3
+  fit_intercept: true
+  output_prefix: sem

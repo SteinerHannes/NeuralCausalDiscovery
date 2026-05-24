@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: ElectricalCircuitData
+  - override /model: DeepMLP
+  - override /causaldiscovery/ci_test: CondIndepKCI
+  - _self_
+
+experiment:
+  name: electrical_circuit_deep_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

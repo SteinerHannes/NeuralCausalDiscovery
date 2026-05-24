@@ -1,0 +1,22 @@
+_target_: torch.optim.lr_scheduler.SequentialLR
+
+milestones:
+  - ${warmup_epochs}
+
+schedulers:
+  - _target_: torch.optim.lr_scheduler.LinearLR
+    start_factor: ${warmup_start_factor}
+    total_iters: ${warmup_epochs}
+
+  - _target_: torch.optim.lr_scheduler.CosineAnnealingLR
+    T_max: ${T_max}
+    eta_min: ${eta_min}
+
+# warmup_start_factor (float): Warmup start factor.
+warmup_start_factor: 0.1
+# warmup_epochs (int): Number of epochs for warmup.
+warmup_epochs: 5
+# T_max (int): Maximum number of iterations.
+T_max: 95
+# eta_min (float): Minimum learning rate.
+eta_min: 1e-5

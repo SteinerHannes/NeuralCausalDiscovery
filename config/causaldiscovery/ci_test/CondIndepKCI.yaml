@@ -1,0 +1,8 @@
+_target_: experiment_utils.ci_tests.CondIndepKCI  # Nonlinear CI test for continuous data
+threshold: 0.01  # p-value cutoff: smaller => fewer independences (denser graphs)
+method: kci  # kci (kernel) | rcit (randomized) | fastkci (approx)
+standardize: true  # z-score features before CI testing (recommended for kernels)
+count_tests: false  # track number of CI tests per conditioning-set size (debug/analysis)
+use_cache: false  # cache repeated CI tests (useful for sweeps; extra memory)
+verbose: true  # print CI test outcomes
+kwargs: {}  # pass-through to causal-learn CIT (e.g., kernelX/kernelY/kernelZ/est_width/kwidthx/kwidthy/kwidthz/use_gp/approx)

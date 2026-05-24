@@ -1,0 +1,31 @@
+num_samples: 2000
+seed: 1
+output_file: intervention_results.csv
+summary_file: intervention_summary.json
+aligned_proxy_output_file: aligned_proxy_dowhy_all_pairs.csv
+aligned_proxy_fold_summary_file: aligned_proxy_dowhy_all_pairs_summary.csv
+aligned_proxy_summary_file: aligned_proxy_dowhy_all_pairs_summary.json
+evaluate_pairs: all # parents_only | all
+use_learned_pag: true
+learned_pag_adj_file: learned_graph_adj.npy
+
+estimate_method: backdoor.linear_regression
+
+effect_threshold: 0.05
+alpha: 0.05
+
+value_mode: quantile  # quantile | mean_std | fixed
+low_q: 0.2    # quantile
+high_q: 0.8   # quantile
+std_mult: 1.0     # mean_std
+fixed_low: -1.0   # fixed
+fixed_high: 1.0   # fixed
+noise_scale: 1.0
+
+model_level:
+  enabled: true
+  prediction_source: aligned_sem  # aligned_sem | aligned_observable_state | outputs
+  mapping_file: ${extraction.alignment.mapping_file}
+  batch_size: 256
+  effect_threshold: ${intervention.effect_threshold}
+  alpha: ${intervention.alpha}

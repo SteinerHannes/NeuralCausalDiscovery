@@ -1,0 +1,23 @@
+_target_: data.LinearSEMDataset.LinearSEMDataset
+# Seed for DAG and data creation. 
+seed: 176
+# The number of nodes the DAG will have
+num_nodes: 6
+input_size: 3
+output_size: 3
+# The expected neighborhood size inside the DAG
+expected_neighborhood_size: 2
+# The number of iterations the generation process will try to create a connected DAG
+num_dags_timeout: 10
+# The number of samples used for the train/val/test pool.
+num_samples: 10000
+# The ratios for splitting the train/val/test pool.
+train_ratio: 0.80
+val_ratio: 0.10
+test_ratio: 0.10
+# Extraction samples added on top of num_samples.
+extract_samples: 1000
+# The minimal 'strength' of an edge
+min_edge_weight: 0.5
+# The maximal 'strength' of an edge
+max_edge_weight: 2.0

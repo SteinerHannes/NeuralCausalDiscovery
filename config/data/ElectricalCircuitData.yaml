@@ -1,0 +1,17 @@
+_target_: data.ElectricalCircuitData.ElectricalCircuitData
+seed: 1                 # int seed for deterministic sampling/splits
+num_samples: 10000      # >0, train/val/test pool size
+input_size: 3           # supported {3,4,5}; x are first input_size variables
+output_size: 3          # supported {3,2,1}; y are next output_size variables; input_size+output_size must be 6
+train_ratio: 0.80       # [0,1], train fraction within the train/val/test pool
+val_ratio: 0.10         # [0,1], validation fraction within the train/val/test pool
+test_ratio: 0.10        # [0,1], test fraction within the train/val/test pool
+extract_samples: 1000  # extraction samples added on top
+v_mean: 0.0             # any real, mean of V ~ Normal
+v_std: 1.0              # >=0, std dev of V ~ Normal
+r_min: 1.0              # >=0 and < r_max, min of R ~ Uniform
+r_max: 10.0             # > r_min, max of R ~ Uniform
+g_min: 0.5              # >=0 and < g_max, min of G ~ Uniform
+g_max: 2.0              # > g_min, max of G ~ Uniform
+sensor_noise_std: 0.1   # >=0, std dev of sensor noise
+output_noise_std: 0.0   # >=0, std dev of output noise

@@ -1,0 +1,76 @@
+defaults:
+  - _self_
+  - debug: disabled
+
+test_folds: [1,2,3,4,5]
+# Base seed for deterministic training RNG
+seed: 1
+device: auto  # auto | mps | cuda | cpu
+print_device_info: true
+
+# Number of epochs to train the model
+epochs: 40
+# Control training length by epochs or optimizer updates
+control_mode: epochs
+# Total optimizer steps we aim for
+target_updates: null
+
+# Automatic model-specific training profiles
+profile_selection: auto  # auto | none | <profile_name>
+profile_control_mode: epochs
+default_profile: shallow
+profile_by_model:
+  ShallowMLP: shallow
+  DeepMLP: deep
+  MLPModel: deep
+  ResidualMLP: residual
+  BottleneckMLP: deep
+  GatedMLP: deep
+
+profiles:
+  shallow:
+    max_epochs: 40
+    optimizer:
+      lr: 0.001
+    scheduler:
+      step_size: 10
+    early_stopping:
+      min_epochs: 10
+      patience: 6
+      min_delta: 0.0001
+  deep:
+    max_epochs: 60
+    optimizer:
+      lr: 0.0008
+    scheduler:
+      step_size: 12
+    early_stopping:
+      min_epochs: 15
+      patience: 8
+      min_delta: 0.0001
+  residual:
+    max_epochs: 80
+    optimizer:
+      lr: 0.0006
+    scheduler:
+      step_size: 16
+    early_stopping:
+      min_epochs: 20
+      patience: 10
+      min_delta: 0.0001
+
+early_stopping:
+  enabled: true
+  min_epochs: 10
+  patience: 6
+  min_delta: 0.0001
+  restore_best_weights: true
+
+#### DATA LOADER ####
+# how many samples per batch to load (default: 1).
+batch_size: 512
+num_workers: 4
+prefetch_factor: 2
+# Used only when num_workers > 0.
+# If True, the data loader will not shut down the worker processes after a dataset has been consumed once. This allows to maintain the workers Dataset instances alive. (default: False)
+persistent_workers: true

@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: ForkColliderLinearSEM
+  - override /model: ShallowMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: fork_collider_linear_sem_shallow_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

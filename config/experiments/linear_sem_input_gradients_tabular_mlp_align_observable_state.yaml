@@ -1,0 +1,34 @@
+# @package _global_
+defaults:
+- _base
+- override /data: LinearSEMDataset
+- override /model: TabularMLP
+- override /causaldiscovery/ci_test: CondIndepParCorr
+- _self_
+experiment:
+  name: linear_sem_input_gradients_tabular_mlp_align_observable_state
+extraction:
+  method: input_gradients
+  alignment:
+    enabled: true
+    include_prefixes:
+    - input_grad_
+    exclude_prefixes: []
+    target_mode: observable_state
+pipeline:
+  run_train: false
+  run_test: false
+  run_extraction: true
+  run_causaldiscovery: true
+  run_pag_cleanup: true
+  run_interventions: true
+reuse:
+  enabled: true
+  source_experiment: linear_sem_tabular_mlp_align
+  mode: symlink
+  manifest_file: reuse_manifest.json
+  required_fold_files:
+  - model.pt
+intervention:
+  model_level:
+    prediction_source: aligned_observable_state

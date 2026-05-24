@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LayeredSparseLinearSEM_Laplace
+  - override /model: ShallowMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: layered_sparse_linear_sem_laplace_shallow_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

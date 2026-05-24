@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LayeredSparseLinearSEM_nodes_12
+  - override /model: TabularMLP
+  - override /causaldiscovery/ci_test: CondIndepParCorr
+  - _self_
+
+experiment:
+  name: layered_sparse_linear_sem_nodes_12_tabular_mlp_align
+
+extraction:
+  alignment:
+    enabled: true

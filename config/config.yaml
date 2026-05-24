@@ -1,0 +1,24 @@
+defaults:
+  - _self_
+  - data: LinearSEMDataset
+  - model: ShallowMLP
+  - optimizer: AdamW
+  - scheduler: StepLR
+  - training: Default
+  - testing: Default
+  - extraction: Default
+  - pipeline: Default
+  - causaldiscovery: Default
+  - pag_cleanup: Default
+  - intervention: Default
+
+# experiment_root_fallback: ../../../outputs/train/2025-11-05_21-20-07
+experiment_root_fallback: ../../../outputs/main/2026-02-04_14-00-00
+torch_model_name: model.pt
+
+
+hydra:
+  run:
+    dir: outputs/${hydra:job.name}/${now:%Y-%m-%d_%H-%M-%S}
+  job:
+    chdir: true

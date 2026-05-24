@@ -1,0 +1,14 @@
+# @package _global_
+defaults:
+  - _base
+  - override /data: LayeredSparseNonlinearSEM_nodes_10
+  - override /model: TabularMLP
+  - override /causaldiscovery/ci_test: CondIndepKCI
+  - _self_
+
+experiment:
+  name: layered_sparse_nonlinear_sem_nodes_10_tabular_mlp_align
+
+extraction:
+  alignment:
+    enabled: true
