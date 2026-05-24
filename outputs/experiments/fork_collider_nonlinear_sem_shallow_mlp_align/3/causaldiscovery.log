@@ -1,0 +1,77 @@
+=== [Causal Discovery] Fold 3 (3/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/metadata.json
+CI(0, 1 | ()) p=0.0721 -> indep=True
+CI(0, 2 | ()) p=0.0002724 -> indep=False
+CI(1, 2 | ()) p=0.8525 -> indep=True
+CI(0, 3 | ()) p=0.0004277 -> indep=False
+CI(1, 3 | ()) p=0.3424 -> indep=True
+CI(2, 3 | ()) p=0 -> indep=False
+CI(0, 4 | ()) p=9.64e-08 -> indep=False
+CI(1, 4 | ()) p=0.1061 -> indep=True
+CI(2, 4 | ()) p=1.255e-14 -> indep=False
+CI(3, 4 | ()) p=0.09553 -> indep=True
+CI(0, 5 | ()) p=4.237e-10 -> indep=False
+CI(1, 5 | ()) p=0.6349 -> indep=True
+CI(2, 5 | ()) p=0.02642 -> indep=True
+CI(3, 5 | ()) p=0.3598 -> indep=True
+CI(4, 5 | ()) p=1.288e-08 -> indep=False
+CI(0, 3 | (2,)) p=0.2697 -> indep=True
+CI(0, 4 | (2,)) p=0.002209 -> indep=False
+CI(2, 4 | (0,)) p=3.104e-07 -> indep=False
+CI(0, 5 | (4,)) p=6.144e-06 -> indep=False
+CI(4, 5 | (0,)) p=0.0004687 -> indep=False
+Saved adjacency matrix to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.8781 -> indep=True
+CI(0, 2 | ()) p=6.704e-11 -> indep=False
+CI(1, 2 | ()) p=0.02191 -> indep=True
+CI(0, 3 | ()) p=0.06474 -> indep=True
+CI(1, 3 | ()) p=0.08161 -> indep=True
+CI(2, 3 | ()) p=0.004215 -> indep=False
+CI(0, 4 | ()) p=0.263 -> indep=True
+CI(1, 4 | ()) p=0.115 -> indep=True
+CI(2, 4 | ()) p=0.002173 -> indep=False
+CI(3, 4 | ()) p=0.3425 -> indep=True
+CI(0, 5 | ()) p=0.897 -> indep=True
+CI(1, 5 | ()) p=0.792 -> indep=True
+CI(2, 5 | ()) p=0.008005 -> indep=False
+CI(3, 5 | ()) p=0.2167 -> indep=True
+CI(4, 5 | ()) p=1.151e-09 -> indep=False
+CI(2, 5 | (4,)) p=0.3061 -> indep=True
+Saved metrics to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/performance_metrics.json
+Saved baseline metrics to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/pag_vs_pag_metrics.json
+Found 8 differences:
+  1. Wrong orientation: 0 --- 2 (DAG: directed_ij, PAG: bidirected)
+  2. Extra: 0 --- 4 (PAG: partial_ij)
+  3. Extra: 0 --- 5 (PAG: bidirected)
+  4. Missing: 1 --- 2 (DAG: directed_ij)
+  5. Wrong orientation: 2 --- 3 (DAG: directed_ij, PAG: bidirected)
+  6. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  7. Missing: 3 --- 4 (DAG: directed_ij)
+  8. Wrong orientation: 4 --- 5 (DAG: directed_ij, PAG: bidirected)
+Saved edge comparison details to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/edge_comparison.txt
+Found 4 differences:
+  1. Missing: 1 --- 2 (DAG: directed_ij)
+  2. Wrong orientation: 2 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 2 --- 4 (DAG: directed_ij, PAG: bidirected)
+  4. Missing: 3 --- 4 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/edge_comparison_baseline.txt
+Found 3 differences:
+  1. Extra: 0 --- 4 (PAG: partial_ij)
+  2. Extra: 0 --- 5 (PAG: bidirected)
+  3. Wrong orientation: 4 --- 5 (Reference PAG: directed_ij, PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (Reference PAG: partial_ij, PAG: bidirected)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/3/baseline_graph_adj.npy

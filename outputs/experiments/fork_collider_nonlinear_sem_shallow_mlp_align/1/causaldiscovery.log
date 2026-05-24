@@ -1,0 +1,94 @@
+=== [Causal Discovery] Fold 1 (1/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/metadata.json
+CI(0, 1 | ()) p=0.4457 -> indep=True
+CI(0, 2 | ()) p=0.0004149 -> indep=False
+CI(1, 2 | ()) p=0.0247 -> indep=True
+CI(0, 3 | ()) p=9.564e-06 -> indep=False
+CI(1, 3 | ()) p=0.004564 -> indep=False
+CI(2, 3 | ()) p=0 -> indep=False
+CI(0, 4 | ()) p=6.51e-07 -> indep=False
+CI(1, 4 | ()) p=0.04495 -> indep=True
+CI(2, 4 | ()) p=0 -> indep=False
+CI(3, 4 | ()) p=1.379e-08 -> indep=False
+CI(0, 5 | ()) p=5.936e-11 -> indep=False
+CI(1, 5 | ()) p=0.04744 -> indep=True
+CI(2, 5 | ()) p=7.772e-16 -> indep=False
+CI(3, 5 | ()) p=4.733e-06 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=3.93e-07 -> indep=False
+CI(0, 3 | (2,)) p=0.05297 -> indep=True
+CI(1, 3 | (2,)) p=0.478 -> indep=True
+CI(0, 4 | (2,)) p=0.004468 -> indep=False
+CI(0, 4 | (3,)) p=0.0002326 -> indep=False
+CI(2, 4 | (0,)) p=3.331e-16 -> indep=False
+CI(2, 4 | (3,)) p=1.707e-12 -> indep=False
+CI(3, 4 | (0,)) p=1.339e-05 -> indep=False
+CI(3, 4 | (2,)) p=0.01254 -> indep=True
+CI(0, 5 | (2,)) p=1.766e-05 -> indep=False
+CI(0, 5 | (3,)) p=1.2e-09 -> indep=False
+CI(0, 5 | (4,)) p=0.003366 -> indep=False
+CI(2, 5 | (0,)) p=5.621e-10 -> indep=False
+CI(2, 5 | (3,)) p=3.346e-06 -> indep=False
+CI(2, 5 | (4,)) p=0.149 -> indep=True
+CI(3, 5 | (0,)) p=0.0002659 -> indep=False
+CI(3, 5 | (4,)) p=0.3636 -> indep=True
+CI(4, 5 | (0,)) p=1.11e-16 -> indep=False
+Saved adjacency matrix to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.4506 -> indep=True
+CI(0, 2 | ()) p=6.33e-07 -> indep=False
+CI(1, 2 | ()) p=0.002686 -> indep=False
+CI(0, 3 | ()) p=0.4031 -> indep=True
+CI(1, 3 | ()) p=0.369 -> indep=True
+CI(2, 3 | ()) p=0.002002 -> indep=False
+CI(0, 4 | ()) p=0.2311 -> indep=True
+CI(1, 4 | ()) p=0.2824 -> indep=True
+CI(2, 4 | ()) p=0.06418 -> indep=True
+CI(3, 4 | ()) p=0.0001812 -> indep=False
+CI(0, 5 | ()) p=0.4143 -> indep=True
+CI(1, 5 | ()) p=0.04619 -> indep=True
+CI(2, 5 | ()) p=0.9242 -> indep=True
+CI(3, 5 | ()) p=0.9142 -> indep=True
+CI(4, 5 | ()) p=2.695e-11 -> indep=False
+CI(0, 2 | (1,)) p=1.349e-07 -> indep=False
+CI(1, 2 | (0,)) p=0.01716 -> indep=True
+Saved metrics to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/performance_metrics.json
+Saved baseline metrics to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/pag_vs_pag_metrics.json
+Found 5 differences:
+  1. Wrong orientation: 0 --- 2 (DAG: directed_ij, PAG: bidirected)
+  2. Extra: 0 --- 4 (PAG: bidirected)
+  3. Extra: 0 --- 5 (PAG: bidirected)
+  4. Missing: 1 --- 2 (DAG: directed_ij)
+  5. Missing: 3 --- 4 (DAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/edge_comparison.txt
+Found 5 differences:
+  1. Missing: 1 --- 2 (DAG: directed_ij)
+  2. Wrong orientation: 2 --- 3 (DAG: directed_ij, PAG: bidirected)
+  3. Missing: 2 --- 4 (DAG: directed_ij)
+  4. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  5. Wrong orientation: 4 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/edge_comparison_baseline.txt
+Found 6 differences:
+  1. Extra: 0 --- 4 (PAG: bidirected)
+  2. Extra: 0 --- 5 (PAG: bidirected)
+  3. Wrong orientation: 2 --- 3 (Reference PAG: bidirected, PAG: directed_ij)
+  4. Extra: 2 --- 4 (PAG: partial_ij)
+  5. Missing: 3 --- 4 (Reference PAG: bidirected)
+  6. Wrong orientation: 4 --- 5 (Reference PAG: bidirected, PAG: directed_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 2 (Reference PAG: partial_ij, PAG: bidirected)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/fork_collider_nonlinear_sem_shallow_mlp_align/1/baseline_graph_adj.npy
