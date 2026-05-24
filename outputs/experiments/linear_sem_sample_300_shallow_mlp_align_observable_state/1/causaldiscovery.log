@@ -1,0 +1,110 @@
+=== [Causal Discovery] Fold 1 (1/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/alignment_results.csv
+Step: prepare ground-truth data
+Key: (176, 6, 3, 3, 2, 10, 10000, 0.5, 2.0, 0.8, 0.1, 0.1, 1000, 1) - Generating new DAG and data...
+Seed: 176, Fold: 1
+Running sample_300__baseline_300
+Saved metadata to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/metadata.json
+Test:  CI( 0 , 1 | () ) = 0.0
+Test:  CI( 0 , 2 | () ) = 0.040824887281664335
+Test:  CI( 1 , 2 | () ) = 0.16494039322978082
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.0
+Test:  CI( 2 , 3 | () ) = 0.05980439371870405
+Test:  CI( 0 , 4 | () ) = 4.912241724497335e-10
+Test:  CI( 1 , 4 | () ) = 4.9825065907338484e-05
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 1.6938159763668637e-09
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.09538053368258681
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 1.5065849456874503e-08
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.43624686229729903
+Test:  CI( 0 , 4 | (1,) ) = 2.9024111503073158e-06
+Test:  CI( 0 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.0010883815540845276
+Test:  CI( 1 , 4 | (0,) ) = 0.7586454925097865
+Test:  CI( 2 , 4 | (0,) ) = 0.0
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (0,) ) = 0.003885898123145326
+Test:  CI( 3 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.016524808351529918
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 1 , 5 | (4,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Test:  CI( 3 , 5 | (4,) ) = 0.0
+Test:  CI( 4 , 5 | (1,) ) = 5.094195775057209e-05
+Test:  CI( 4 , 5 | (3,) ) = 0.8654174646967421
+Test:  CI( 0 , 4 | (2, 3) ) = 8.215650382226158e-15
+Test:  CI( 2 , 4 | (0, 3) ) = 0.0
+Test:  CI( 3 , 4 | (0, 2) ) = 5.280321040124214e-05
+Saved adjacency matrix to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 0.0
+Test:  CI( 0 , 2 | () ) = 0.5599021386799301
+Test:  CI( 1 , 2 | () ) = 0.43984768007972175
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 0.0
+Test:  CI( 2 , 3 | () ) = 0.7505209749943866
+Test:  CI( 0 , 4 | () ) = 0.0005811796002224145
+Test:  CI( 1 , 4 | () ) = 0.0005336901617383205
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.3081908317282549
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.39152715890435585
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.9397407599376124
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.04627922268685691
+Test:  CI( 0 , 4 | (1,) ) = 0.08787387064174057
+Test:  CI( 1 , 4 | (2,) ) = 1.1063066907013308e-07
+Test:  CI( 2 , 4 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 9.025254878114453e-05
+Test:  CI( 1 , 5 | (0,) ) = 4.440892098500626e-15
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 3 , 5 | (0,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Test:  CI( 1 , 5 | (0, 3) ) = 0.0
+Saved metrics to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/performance_metrics.json
+Saved baseline metrics to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/pag_vs_pag_metrics.json
+Found 1 differences:
+  1. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 5 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 0 --- 4 (DAG: directed_ij, PAG: partial_ij)
+  4. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+  5. Partial orientation: 3 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/edge_comparison.txt
+Found 5 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Extra: 0 --- 5 (PAG: partial_ij)
+  3. Extra: 1 --- 4 (PAG: bidirected)
+  4. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+  5. Missing: 3 --- 4 (DAG: directed_ij)
+Found 4 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+  4. Partial orientation: 3 --- 5 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/edge_comparison_baseline.txt
+Found 4 differences:
+  1. Extra: 0 --- 4 (PAG: partial_ij)
+  2. Missing: 0 --- 5 (Reference PAG: partial_ij)
+  3. Missing: 1 --- 4 (Reference PAG: bidirected)
+  4. Extra: 3 --- 4 (PAG: partial_ij)
+Found 1 partial orientation differences:
+  1. Partial orientation: 3 --- 5 (Reference PAG: partial_ij, PAG: directed_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/linear_sem_sample_300_shallow_mlp_align_observable_state/1/baseline_graph_adj.npy
