@@ -1,0 +1,83 @@
+=== [Causal Discovery] Fold 3 (3/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/metadata.json
+CI(0, 1 | ()) p=9.456e-12 -> indep=False
+CI(0, 2 | ()) p=0.06107 -> indep=True
+CI(1, 2 | ()) p=0.0008742 -> indep=False
+CI(0, 3 | ()) p=0.01776 -> indep=True
+CI(1, 3 | ()) p=1.644e-10 -> indep=False
+CI(2, 3 | ()) p=0 -> indep=False
+CI(0, 4 | ()) p=1.913e-07 -> indep=False
+CI(1, 4 | ()) p=6.948e-06 -> indep=False
+CI(2, 4 | ()) p=2.62e-10 -> indep=False
+CI(3, 4 | ()) p=1.528e-13 -> indep=False
+CI(0, 5 | ()) p=0.7073 -> indep=True
+CI(1, 5 | ()) p=0.01407 -> indep=True
+CI(2, 5 | ()) p=1.695e-09 -> indep=False
+CI(3, 5 | ()) p=0.001429 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(1, 3 | (2,)) p=1.193e-07 -> indep=False
+CI(2, 3 | (1,)) p=0 -> indep=False
+CI(0, 4 | (1,)) p=0.004109 -> indep=False
+CI(0, 4 | (2,)) p=1.583e-05 -> indep=False
+CI(0, 4 | (3,)) p=8.279e-05 -> indep=False
+CI(1, 4 | (0,)) p=0.0232 -> indep=True
+CI(2, 4 | (0,)) p=3.607e-07 -> indep=False
+CI(2, 4 | (3,)) p=0.3105 -> indep=True
+CI(3, 4 | (0,)) p=7.628e-10 -> indep=False
+CI(2, 5 | (3,)) p=0.001319 -> indep=False
+CI(2, 5 | (4,)) p=0.028 -> indep=True
+CI(3, 5 | (4,)) p=0.03267 -> indep=True
+Saved adjacency matrix to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/learned_graph_adj.npy
+CI(0, 1 | ()) p=0 -> indep=False
+CI(0, 2 | ()) p=7.751e-08 -> indep=False
+CI(1, 2 | ()) p=5.961e-08 -> indep=False
+CI(0, 3 | ()) p=0.1268 -> indep=True
+CI(1, 3 | ()) p=0.06279 -> indep=True
+CI(2, 3 | ()) p=0.002697 -> indep=False
+CI(0, 4 | ()) p=0.4944 -> indep=True
+CI(1, 4 | ()) p=0.7039 -> indep=True
+CI(2, 4 | ()) p=0.4345 -> indep=True
+CI(3, 4 | ()) p=4.98e-07 -> indep=False
+CI(0, 5 | ()) p=0.3854 -> indep=True
+CI(1, 5 | ()) p=0.5702 -> indep=True
+CI(2, 5 | ()) p=0.3853 -> indep=True
+CI(3, 5 | ()) p=0.06604 -> indep=True
+CI(4, 5 | ()) p=2.109e-15 -> indep=False
+CI(0, 2 | (1,)) p=0.1899 -> indep=True
+Saved metrics to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/performance_metrics.json
+Saved baseline metrics to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/pag_vs_pag_metrics.json
+Found 5 differences:
+  1. Extra: 0 --- 4 (PAG: partial_ij)
+  2. Wrong orientation: 1 --- 2 (DAG: directed_ij, PAG: bidirected)
+  3. Extra: 1 --- 3 (PAG: bidirected)
+  4. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  5. Wrong orientation: 4 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 2 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/edge_comparison.txt
+Found 3 differences:
+  1. Wrong orientation: 2 --- 3 (DAG: directed_ij, PAG: bidirected)
+  2. Wrong orientation: 3 --- 4 (DAG: directed_ij, PAG: bidirected)
+  3. Wrong orientation: 4 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/edge_comparison_baseline.txt
+Found 3 differences:
+  1. Extra: 0 --- 4 (PAG: partial_ij)
+  2. Wrong orientation: 1 --- 2 (Reference PAG: directed_ij, PAG: bidirected)
+  3. Extra: 1 --- 3 (PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 2 --- 3 (Reference PAG: bidirected, PAG: partial_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/chain_nonlinear_sem_shallow_mlp_align/3/baseline_graph_adj.npy
