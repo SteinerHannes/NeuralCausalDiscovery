@@ -1,0 +1,93 @@
+=== [Causal Discovery] Fold 3 (3/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/alignment_results.csv
+Step: prepare ground-truth data
+Key: (176, 6, 3, 3, 2, 10, 10000, 0.5, 2.0, 0.8, 0.1, 0.1, 1000, 3) - Generating new DAG and data...
+Seed: 176, Fold: 3
+Running sample_100__baseline_100
+Saved metadata to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/metadata.json
+Test:  CI( 0 , 1 | () ) = 1.4352963262354024e-12
+Test:  CI( 0 , 2 | () ) = 0.3380533031344899
+Test:  CI( 1 , 2 | () ) = 0.4015772662623287
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 3.0513369608797802e-12
+Test:  CI( 2 , 3 | () ) = 0.3211687059218833
+Test:  CI( 0 , 4 | () ) = 0.0002663718931799064
+Test:  CI( 1 , 4 | () ) = 0.011537141584184285
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.00024237080989286675
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 0.0
+Test:  CI( 2 , 5 | () ) = 0.30834888028213125
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.0002861507875044911
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.07924069682347956
+Test:  CI( 0 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 4 | (3,) ) = 0.6633616872383001
+Test:  CI( 2 , 4 | (3,) ) = 0.0
+Test:  CI( 3 , 4 | (2,) ) = 0.0
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.020605447333597038
+Test:  CI( 1 , 5 | (3,) ) = 0.0
+Test:  CI( 1 , 5 | (4,) ) = 0.0
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Test:  CI( 3 , 5 | (4,) ) = 0.0
+Test:  CI( 4 , 5 | (1,) ) = 0.008326099665741493
+Test:  CI( 4 , 5 | (3,) ) = 0.6822071505617626
+Saved adjacency matrix to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/learned_graph_adj.npy
+Test:  CI( 0 , 1 | () ) = 5.674976044645064e-10
+Test:  CI( 0 , 2 | () ) = 0.3737049840017932
+Test:  CI( 1 , 2 | () ) = 0.6128055884971966
+Test:  CI( 0 , 3 | () ) = 0.0
+Test:  CI( 1 , 3 | () ) = 3.932818124496862e-07
+Test:  CI( 2 , 3 | () ) = 0.5383743352456718
+Test:  CI( 0 , 4 | () ) = 0.5837250845110653
+Test:  CI( 1 , 4 | () ) = 0.4385586038440874
+Test:  CI( 2 , 4 | () ) = 0.0
+Test:  CI( 3 , 4 | () ) = 0.4890116384551253
+Test:  CI( 0 , 5 | () ) = 0.0
+Test:  CI( 1 , 5 | () ) = 2.220446049250313e-16
+Test:  CI( 2 , 5 | () ) = 0.7877243808845478
+Test:  CI( 3 , 5 | () ) = 0.0
+Test:  CI( 4 , 5 | () ) = 0.6958493052187396
+Test:  CI( 0 , 3 | (1,) ) = 0.0
+Test:  CI( 1 , 3 | (0,) ) = 0.27595701964724384
+Test:  CI( 0 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (3,) ) = 0.0041389786617571644
+Test:  CI( 1 , 5 | (0,) ) = 1.9079641999653063e-07
+Test:  CI( 1 , 5 | (3,) ) = 3.552713678800501e-15
+Test:  CI( 3 , 5 | (0,) ) = 6.417592879337519e-08
+Test:  CI( 3 , 5 | (1,) ) = 0.0
+Test:  CI( 0 , 5 | (1, 3) ) = 0.47105882924367637
+Test:  CI( 1 , 5 | (0, 3) ) = 4.574118861455645e-13
+Test:  CI( 3 , 5 | (0, 1) ) = 1.4566126083082054e-13
+Saved metrics to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/performance_metrics.json
+Saved baseline metrics to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/pag_vs_pag_metrics.json
+Found 2 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Wrong orientation: 1 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/edge_comparison.txt
+Found 2 differences:
+  1. Missing: 0 --- 4 (DAG: directed_ij)
+  2. Missing: 3 --- 4 (DAG: directed_ij)
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 1 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/edge_comparison_baseline.txt
+Found 2 differences:
+  1. Wrong orientation: 1 --- 5 (Reference PAG: directed_ij, PAG: bidirected)
+  2. Extra: 3 --- 4 (PAG: directed_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/linear_sem_sample_100_shallow_mlp_align_observable_state/3/baseline_graph_adj.npy
