@@ -1,0 +1,204 @@
+experiment_root_fallback: ../../../outputs/main/2026-02-04_14-00-00
+torch_model_name: model.pt
+data:
+  _target_: data.LinearSEMDataset.LinearSEMDataset
+  seed: 176
+  num_nodes: 6
+  input_size: 3
+  output_size: 3
+  expected_neighborhood_size: 2
+  num_dags_timeout: 10
+  num_samples: 10000
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+  extract_samples: 1000
+  min_edge_weight: 0.5
+  max_edge_weight: 2.0
+model:
+  _target_: models.ShallowMLP.ShallowMLP
+  model_id: ShallowMLP
+  hidden1_size: 32
+  hidden2_size: 32
+  activation: relu
+optimizer:
+  _target_: torch.optim.AdamW
+  lr: 0.001
+  weight_decay: 0.001
+scheduler:
+  _target_: torch.optim.lr_scheduler.StepLR
+  gamma: 0.85
+  step_size: 5
+training:
+  test_folds:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  seed: 1
+  device: auto
+  print_device_info: true
+  epochs: 40
+  control_mode: epochs
+  target_updates: null
+  profile_selection: auto
+  profile_control_mode: epochs
+  default_profile: shallow
+  profile_by_model:
+    ShallowMLP: shallow
+    DeepMLP: deep
+    MLPModel: deep
+    ResidualMLP: residual
+    BottleneckMLP: deep
+    GatedMLP: deep
+  profiles:
+    shallow:
+      max_epochs: 40
+      optimizer:
+        lr: 0.001
+      scheduler:
+        step_size: 10
+      early_stopping:
+        min_epochs: 10
+        patience: 6
+        min_delta: 0.0001
+    deep:
+      max_epochs: 60
+      optimizer:
+        lr: 0.0008
+      scheduler:
+        step_size: 12
+      early_stopping:
+        min_epochs: 15
+        patience: 8
+        min_delta: 0.0001
+    residual:
+      max_epochs: 80
+      optimizer:
+        lr: 0.0006
+      scheduler:
+        step_size: 16
+      early_stopping:
+        min_epochs: 20
+        patience: 10
+        min_delta: 0.0001
+  early_stopping:
+    enabled: true
+    min_epochs: 10
+    patience: 6
+    min_delta: 0.0001
+    restore_best_weights: true
+  batch_size: 512
+  num_workers: 4
+  prefetch_factor: 2
+  persistent_workers: true
+  debug:
+    disable_bat_pbar: true
+testing: {}
+extraction:
+  output_file: extraction_results.csv
+  batch_size: 256
+  num_workers: 2
+  persistent_workers: true
+  prefetch_factor: 2
+  method: activations
+  include_inputs: true
+  include_outputs: true
+  flatten: true
+  layer_types: null
+  prefix: null
+  grad_target: sum
+  weights_repeat: false
+  weights_include_bias: true
+  alignment:
+    enabled: true
+    fit_subset: val
+    output_file: alignment_results.csv
+    metrics_file: alignment_metrics.json
+    mapping_file: alignment_mapping.npz
+    save_mapping: true
+    target_mode: observable_state
+    use_aligned_for_causaldiscovery: true
+    columns_mode: all
+    include_prefixes: []
+    exclude_prefixes:
+    - input_
+    - output_
+    max_features: null
+    selection_strategy: first
+    standardize_features: true
+    standardize_targets: true
+    ridge_alpha: 0.001
+    fit_intercept: true
+    output_prefix: sem
+pipeline:
+  run_train: false
+  run_test: false
+  run_extraction: false
+  run_causaldiscovery: true
+  run_pag_cleanup: true
+  run_interventions: true
+causaldiscovery:
+  mode: model_level
+  columns_mode: all
+  include_prefixes: []
+  exclude_prefixes: []
+  max_features: null
+  selection_strategy: first
+  max_samples: 150
+  sample_sizes: null
+  baseline_max_samples: ${causaldiscovery.max_samples}
+  baseline_sample_sizes: null
+  sample_strategy: first
+  ci_test:
+    _target_: causal_discovery_utils.cond_indep_tests.CondIndepParCorr
+    threshold: 0.01
+    count_tests: false
+    use_cache: false
+    verbose: true
+pag_cleanup:
+  learned_pag_adj_file: learned_graph_adj.npy
+  baseline_pag_adj_file: baseline_graph_adj.npy
+  combined_pag_adj_file: combined_model_pag_adj.npy
+  combined_pag_plot_file: combined_model_pag.png
+  dag_vs_combined_metrics_file: dag_vs_combined_pag_metrics.json
+  data_vs_combined_metrics_file: data_vs_combined_pag_metrics.json
+intervention:
+  num_samples: 2000
+  seed: 1
+  output_file: intervention_results.csv
+  summary_file: intervention_summary.json
+  evaluate_pairs: all
+  use_learned_pag: true
+  learned_pag_adj_file: learned_graph_adj.npy
+  estimate_method: backdoor.linear_regression
+  effect_threshold: 0.05
+  alpha: 0.05
+  value_mode: quantile
+  low_q: 0.2
+  high_q: 0.8
+  std_mult: 1.0
+  fixed_low: -1.0
+  fixed_high: 1.0
+  noise_scale: 1.0
+  model_level:
+    enabled: true
+    prediction_source: aligned_observable_state
+    mapping_file: ${extraction.alignment.mapping_file}
+    batch_size: 256
+    effect_threshold: ${intervention.effect_threshold}
+    alpha: ${intervention.alpha}
+experiment:
+  name: linear_sem_threshold_0p01_shallow_mlp_align_observable_state
+reuse:
+  enabled: true
+  source_experiment: linear_sem_shallow_mlp_align_observable_state
+  mode: symlink
+  manifest_file: reuse_manifest.json
+  required_fold_files:
+  - model.pt
+  - extraction_results.csv
+  - alignment_results.csv
+  - alignment_mapping.npz
+  - alignment_metrics.json
