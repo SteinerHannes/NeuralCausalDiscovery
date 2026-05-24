@@ -1,0 +1,24 @@
+{
+  "fold": 4,
+  "dataset": {
+    "name": "ElectricalCircuitData",
+    "target": "data.ElectricalCircuitData.ElectricalCircuitData"
+  },
+  "model": {
+    "name": "ShallowMLP",
+    "target": "models.ShallowMLP.ShallowMLP"
+  },
+  "ci_test": {
+    "name": "CondIndepKCI",
+    "target": "experiment_utils.ci_tests.CondIndepKCI",
+    "threshold": 0.01
+  },
+  "sample_size": 150,
+  "baseline_sample_size": 150,
+  "alignment": {
+    "enabled": true,
+    "used_for_causaldiscovery": true,
+    "status": "aligned",
+    "target_mode": "observable_state"
+  }
+}
