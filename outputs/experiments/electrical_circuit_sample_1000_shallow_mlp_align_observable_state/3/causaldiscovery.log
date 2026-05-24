@@ -1,0 +1,116 @@
+=== [Causal Discovery] Fold 3 (3/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/alignment_results.csv
+Step: prepare ground-truth data
+Running sample_1000__baseline_1000
+Saved metadata to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/metadata.json
+CI(0, 1 | ()) p=0.6314 -> indep=True
+CI(0, 2 | ()) p=0.6549 -> indep=True
+CI(1, 2 | ()) p=0.7114 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=0 -> indep=False
+CI(2, 3 | ()) p=0.3398 -> indep=True
+CI(0, 4 | ()) p=0 -> indep=False
+CI(1, 4 | ()) p=0 -> indep=False
+CI(2, 4 | ()) p=0.7572 -> indep=True
+CI(3, 4 | ()) p=0 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=0 -> indep=False
+CI(2, 5 | ()) p=0 -> indep=False
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=0 -> indep=False
+CI(0, 4 | (1,)) p=0 -> indep=False
+CI(0, 4 | (3,)) p=0 -> indep=False
+CI(1, 4 | (0,)) p=0 -> indep=False
+CI(1, 4 | (3,)) p=0 -> indep=False
+CI(3, 4 | (0,)) p=0 -> indep=False
+CI(3, 4 | (1,)) p=0 -> indep=False
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (2,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=0.06472 -> indep=True
+CI(1, 5 | (2,)) p=0 -> indep=False
+CI(1, 5 | (3,)) p=2.645e-08 -> indep=False
+CI(1, 5 | (4,)) p=0.01163 -> indep=True
+CI(2, 5 | (3,)) p=0 -> indep=False
+CI(2, 5 | (4,)) p=0 -> indep=False
+CI(3, 5 | (2,)) p=0 -> indep=False
+CI(3, 5 | (4,)) p=0 -> indep=False
+CI(4, 5 | (2,)) p=0 -> indep=False
+CI(4, 5 | (3,)) p=0 -> indep=False
+CI(0, 4 | (1, 3)) p=0 -> indep=False
+CI(1, 4 | (0, 3)) p=2.192e-13 -> indep=False
+CI(3, 4 | (0, 1)) p=0 -> indep=False
+CI(4, 5 | (2, 3)) p=0 -> indep=False
+CI(4, 5 | (0, 3)) p=0 -> indep=False
+CI(4, 5 | (1, 3)) p=0 -> indep=False
+CI(4, 5 | (0, 2, 3)) p=0 -> indep=False
+CI(4, 5 | (1, 2, 3)) p=0 -> indep=False
+CI(4, 5 | (0, 1, 3)) p=0 -> indep=False
+CI(4, 5 | (0, 1, 2, 3)) p=0 -> indep=False
+Saved adjacency matrix to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.7677 -> indep=True
+CI(0, 2 | ()) p=0.7859 -> indep=True
+CI(1, 2 | ()) p=0.7276 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=0 -> indep=False
+CI(2, 3 | ()) p=0.782 -> indep=True
+CI(0, 4 | ()) p=0 -> indep=False
+CI(1, 4 | ()) p=0 -> indep=False
+CI(2, 4 | ()) p=0.9675 -> indep=True
+CI(3, 4 | ()) p=0 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=0 -> indep=False
+CI(2, 5 | ()) p=0 -> indep=False
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=0 -> indep=False
+CI(0, 4 | (1,)) p=0 -> indep=False
+CI(0, 4 | (3,)) p=0.4179 -> indep=True
+CI(1, 4 | (3,)) p=0.5531 -> indep=True
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (2,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=0.1893 -> indep=True
+CI(1, 5 | (2,)) p=0 -> indep=False
+CI(1, 5 | (3,)) p=0.5805 -> indep=True
+CI(2, 5 | (3,)) p=0 -> indep=False
+CI(2, 5 | (4,)) p=0 -> indep=False
+CI(3, 5 | (2,)) p=0 -> indep=False
+CI(3, 5 | (4,)) p=0.8102 -> indep=True
+CI(4, 5 | (2,)) p=0 -> indep=False
+Saved metrics to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/performance_metrics.json
+Saved baseline metrics to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/pag_vs_pag_metrics.json
+Found 4 differences:
+  1. Extra: 0 --- 4 (PAG: partial_ij)
+  2. Extra: 1 --- 4 (PAG: partial_ij)
+  3. Extra: 3 --- 5 (PAG: bidirected)
+  4. Wrong orientation: 4 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 4 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 5 (DAG: directed_ij, PAG: partial_ij)
+  4. Partial orientation: 3 --- 4 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/edge_comparison.txt
+No differences found - graphs match perfectly!
+Found 3 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  3. Partial orientation: 2 --- 5 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/edge_comparison_baseline.txt
+Found 4 differences:
+  1. Extra: 0 --- 4 (PAG: partial_ij)
+  2. Extra: 1 --- 4 (PAG: partial_ij)
+  3. Extra: 3 --- 5 (PAG: bidirected)
+  4. Wrong orientation: 4 --- 5 (Reference PAG: directed_ij, PAG: bidirected)
+Found 1 partial orientation differences:
+  1. Partial orientation: 3 --- 4 (Reference PAG: directed_ij, PAG: partial_ij)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/electrical_circuit_sample_1000_shallow_mlp_align_observable_state/3/baseline_graph_adj.npy
