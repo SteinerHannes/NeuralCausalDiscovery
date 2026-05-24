@@ -1,0 +1,41 @@
+{
+  "control_mode": "epochs",
+  "configured_epochs": 60,
+  "target_updates": null,
+  "batch_size": 512,
+  "batches_per_epoch": 16,
+  "effective_epochs": 60,
+  "effective_updates": 960,
+  "planned_epochs": 60,
+  "planned_updates": 960,
+  "model_name": "DeepMLP",
+  "dataset_name": "LinearSEMDataset",
+  "profile_name": "deep",
+  "num_parameters": 12931,
+  "early_stopping": {
+    "enabled": true,
+    "min_epochs": 15,
+    "patience": 8,
+    "min_delta": 0.0001,
+    "restore_best_weights": true
+  },
+  "optimizer_settings": {
+    "_target_": "torch.optim.AdamW",
+    "lr": 0.0008,
+    "weight_decay": 0.001
+  },
+  "scheduler_settings": {
+    "_target_": "torch.optim.lr_scheduler.StepLR",
+    "gamma": 0.85,
+    "step_size": 12
+  },
+  "optimizer_override_skipped_keys": [],
+  "scheduler_override_skipped_keys": [],
+  "actual_epochs": 36,
+  "actual_updates": 576,
+  "best_epoch": 28,
+  "best_val_loss": 0.3511579632759094,
+  "stop_reason": "early_stopping",
+  "early_stopping_triggered": true,
+  "seed": 5
+}
