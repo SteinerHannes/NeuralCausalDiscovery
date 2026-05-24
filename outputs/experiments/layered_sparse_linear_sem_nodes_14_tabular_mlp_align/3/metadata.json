@@ -1,0 +1,24 @@
+{
+  "fold": 3,
+  "dataset": {
+    "name": "TemplatedLinearSEMDataset",
+    "target": "data.TemplatedLinearSEMDataset.TemplatedLinearSEMDataset"
+  },
+  "model": {
+    "name": "MLPModel",
+    "target": "models.MLPModel.MLPModel"
+  },
+  "ci_test": {
+    "name": "CondIndepParCorr",
+    "target": "causal_discovery_utils.cond_indep_tests.CondIndepParCorr",
+    "threshold": 0.01
+  },
+  "sample_size": 150,
+  "baseline_sample_size": 150,
+  "alignment": {
+    "enabled": true,
+    "used_for_causaldiscovery": true,
+    "status": "aligned",
+    "target_mode": "sem_truth"
+  }
+}
