@@ -55,7 +55,7 @@ add both repositories to `PYTHONPATH`.
 
 ```bash
 cd ..
-git clone https://github.com/IntelLabs/causality-lab.git
+git clone https://github.com/SteinerHannes/causality-lab.git
 cd GlobalCausalAnalysis
 export PYTHONPATH="$(pwd):$(cd ../causality-lab && pwd):$PYTHONPATH"
 ```
