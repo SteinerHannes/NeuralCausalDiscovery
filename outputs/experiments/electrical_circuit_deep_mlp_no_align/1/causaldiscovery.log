@@ -1,0 +1,100 @@
+=== [Causal Discovery] Fold 1 (1/5) ===
+Step: load extraction data
+Loading extraction data from: outputs/experiments/electrical_circuit_deep_mlp_no_align/1/extraction_results.csv
+Step: prepare ground-truth data
+Running sample_150__baseline_150
+Saved metadata to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/metadata.json
+CI(0, 1 | ()) p=0.7154 -> indep=True
+CI(0, 2 | ()) p=0.1718 -> indep=True
+CI(1, 2 | ()) p=0.2533 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=2.622e-08 -> indep=False
+CI(2, 3 | ()) p=1.273e-05 -> indep=False
+CI(0, 4 | ()) p=0.005587 -> indep=False
+CI(1, 4 | ()) p=0 -> indep=False
+CI(2, 4 | ()) p=8.052e-08 -> indep=False
+CI(3, 4 | ()) p=4.09e-07 -> indep=False
+CI(0, 5 | ()) p=0.4406 -> indep=True
+CI(1, 5 | ()) p=0 -> indep=False
+CI(2, 5 | ()) p=0.02526 -> indep=True
+CI(3, 5 | ()) p=1.228e-10 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(0, 3 | (2,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=8.882e-16 -> indep=False
+CI(1, 3 | (2,)) p=2.509e-11 -> indep=False
+CI(2, 3 | (0,)) p=4.874e-14 -> indep=False
+CI(2, 3 | (1,)) p=8.756e-09 -> indep=False
+CI(0, 4 | (1,)) p=8.66e-15 -> indep=False
+CI(0, 4 | (2,)) p=0.001289 -> indep=False
+CI(0, 4 | (3,)) p=0.4345 -> indep=True
+CI(1, 4 | (2,)) p=0 -> indep=False
+CI(1, 4 | (3,)) p=0 -> indep=False
+CI(2, 4 | (1,)) p=1.11e-16 -> indep=False
+CI(2, 4 | (3,)) p=0 -> indep=False
+CI(3, 4 | (1,)) p=0.2183 -> indep=True
+CI(1, 5 | (3,)) p=0 -> indep=False
+CI(1, 5 | (4,)) p=4.374e-14 -> indep=False
+CI(3, 5 | (1,)) p=0.226 -> indep=True
+CI(4, 5 | (1,)) p=3.685e-09 -> indep=False
+CI(2, 3 | (0, 1)) p=0 -> indep=False
+Saved adjacency matrix to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/learned_graph_adj.npy
+CI(0, 1 | ()) p=0.5235 -> indep=True
+CI(0, 2 | ()) p=0.07306 -> indep=True
+CI(1, 2 | ()) p=0.5525 -> indep=True
+CI(0, 3 | ()) p=0 -> indep=False
+CI(1, 3 | ()) p=0 -> indep=False
+CI(2, 3 | ()) p=0.3946 -> indep=True
+CI(0, 4 | ()) p=0 -> indep=False
+CI(1, 4 | ()) p=1.221e-14 -> indep=False
+CI(2, 4 | ()) p=0.3665 -> indep=True
+CI(3, 4 | ()) p=0 -> indep=False
+CI(0, 5 | ()) p=0 -> indep=False
+CI(1, 5 | ()) p=1.215e-11 -> indep=False
+CI(2, 5 | ()) p=0.05136 -> indep=True
+CI(3, 5 | ()) p=0 -> indep=False
+CI(4, 5 | ()) p=0 -> indep=False
+CI(0, 3 | (1,)) p=0 -> indep=False
+CI(1, 3 | (0,)) p=7.772e-16 -> indep=False
+CI(0, 4 | (1,)) p=0 -> indep=False
+CI(0, 4 | (3,)) p=0.1802 -> indep=True
+CI(1, 4 | (3,)) p=0.9389 -> indep=True
+CI(0, 5 | (1,)) p=0 -> indep=False
+CI(0, 5 | (3,)) p=0.4176 -> indep=True
+CI(1, 5 | (3,)) p=0.8942 -> indep=True
+CI(3, 5 | (4,)) p=0.2684 -> indep=True
+Saved metrics to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/performance_metrics.json
+Saved baseline metrics to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/baseline_performance_metrics.json
+Saved PAG-vs-PAG metrics to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/pag_vs_pag_metrics.json
+Found 7 differences:
+  1. Extra: 1 --- 4 (PAG: partial_ij)
+  2. Extra: 1 --- 5 (PAG: partial_ij)
+  3. Extra: 2 --- 3 (PAG: bidirected)
+  4. Extra: 2 --- 4 (PAG: bidirected)
+  5. Missing: 2 --- 5 (DAG: directed_ij)
+  6. Missing: 3 --- 4 (DAG: directed_ij)
+  7. Wrong orientation: 4 --- 5 (DAG: directed_ij, PAG: bidirected)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved edge comparison details to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/edge_comparison.txt
+Found 1 differences:
+  1. Missing: 2 --- 5 (DAG: directed_ij)
+Found 2 partial orientation differences:
+  1. Partial orientation: 0 --- 3 (DAG: directed_ij, PAG: partial_ij)
+  2. Partial orientation: 1 --- 3 (DAG: directed_ij, PAG: partial_ij)
+Saved baseline edge comparison details to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/edge_comparison_baseline.txt
+Found 6 differences:
+  1. Extra: 1 --- 4 (PAG: partial_ij)
+  2. Extra: 1 --- 5 (PAG: partial_ij)
+  3. Extra: 2 --- 3 (PAG: bidirected)
+  4. Extra: 2 --- 4 (PAG: bidirected)
+  5. Missing: 3 --- 4 (Reference PAG: directed_ij)
+  6. Wrong orientation: 4 --- 5 (Reference PAG: directed_ij, PAG: bidirected)
+Saved PAG-vs-PAG edge comparison details to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/edge_comparison_pag_vs_pag.txt
+Saved figure to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/pag_vs_dag.png
+Saved baseline figure to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/baseline_pag_vs_dag.png
+Saved combined DAG comparison to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/pags_vs_dag.png
+Saved PAG-vs-PAG figure to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/pag_vs_pag.png
+Saved adjacency matrix to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/learned_graph_adj.npy
+Saved baseline adjacency matrix to outputs/experiments/electrical_circuit_deep_mlp_no_align/1/baseline_graph_adj.npy
